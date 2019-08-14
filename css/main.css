@@ -2675,6 +2675,17 @@ input, select, textarea {
 		width: 25%;
 	}
 
+	th.events {
+		background-color: lightGray;
+		border-radius: 25px;
+		font-size: 25px;
+		padding: 5px;
+	}
+
+	tr.events {
+		padding: 2px;
+	}
+
 	/* table tbody tr {
 			border: solid 1px;
 			border-left: 0;
