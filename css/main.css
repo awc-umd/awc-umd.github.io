@@ -26,6 +26,16 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+.sign-up {
+	font-size: 150%;
+	color: #a89cc8;
+	text-decoration: underline;
+}
+
+.sign-up:hover {
+	color: lightGray;
+}
+
 
 
 article, aside, details, figcaption, figure,
