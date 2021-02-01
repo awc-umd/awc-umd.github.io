@@ -46,6 +46,10 @@ body {
 	line-height: 1;
 }
 
+header {
+	text-align: center;
+}
+
 ol, ul {
 	list-style: none;
 }
