@@ -50,7 +50,18 @@
 <!--										<ul class="actions">-->
 <!--											<li><a href="learn_more.html" class="button">Learn More</a></li>-->
 <!--										</ul>-->
-								</section>
+							</section>
+
+						<!-- Slideshow -->
+							<section id="Slideshow" class="main slideshow" style="background-color: #F7F7F7">
+									<img class= "main slides" src="group_pic.jpg" style="max-height:500px; width:100%">
+									<img class= "main slides" src="meeting.jpg" style="width:100%">
+									<img class= "main slides" src="pizza.jpg" style="width:100%">
+									<img class= "main slides" src="robotics.jpg" style="width:100%">
+									<img class= "main slides" src="girl.jpg" style="max-height:500px; width:100%">
+									<img class= "main slides" src="cheer.jpg" style="max-height:500px; width:100%">
+									<img class= "main slides" src="burrito.jpg" style="width:100%">
+							</section>
 
 						<!-- First Section -->
 							<section id="first" class="main special" style="background-color: #F7F7F7;">
@@ -308,6 +319,25 @@
 			<script src="js/breakpoints.min.js"></script>
 			<script src="js/util.js"></script>
 			<script src="js/main.js"></script>
+
+			<script>
+				var myIndex = 0;
+				carousel();
+
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("main slides");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					myIndex++;
+					if (myIndex > x.length) {
+						myIndex = 1;
+					}
+					x[myIndex-1].style.display = "block";
+					setTimeout(carousel, 9000);
+				}
+			</script>
 
 	</body>
 </html>
