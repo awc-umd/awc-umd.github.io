@@ -1841,7 +1841,7 @@ input, select, textarea {
 		border-color: rgba(255, 255, 255, 0.35);
 	}
 
-/* Button */
+/* Button 
 
 	input[type="submit"],
 	input[type="reset"],
@@ -2002,6 +2002,7 @@ input, select, textarea {
 			.button.primary.icon:before {
 				color: #ffffff !important;
 			}
+*/
 
 /* Form */
 
@@ -2658,6 +2659,9 @@ input, select, textarea {
 
 	header.major h2:after {
 		background-color: rgba(255, 255, 255, 0.35);
+		background-image: linear-gradient(90deg, #a89cc8, #efa8b0, #a89cc8);
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 /* Table */
@@ -3192,7 +3196,7 @@ input, select, textarea {
 			transform: scale(0.8) rotate(-30deg);
 		}
 
-/* Nav */
+/* Nav 
 
 	#nav {
 		-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
@@ -3315,6 +3319,8 @@ input, select, textarea {
 				}
 
 		}
+*/
+
 
 /* Main */
 
