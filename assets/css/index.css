@@ -1,6 +1,15 @@
 /* Main & Headings */
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
+iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
 body, input, select, textarea {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-size: 17pt;
