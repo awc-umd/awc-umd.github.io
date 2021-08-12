@@ -325,3 +325,51 @@ footer {
 .exec .year {
     color: #EFA8B0;
 }
+
+/* Page Titles */
+.page-header.page-header-small {
+    min-height: 60vh;
+    max-height: 440px;
+}
+
+.page-header {
+    min-height: 100vh;
+    max-height: 999px;
+    padding: 0;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+.content-center {
+    font-weight: bolder;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: 2;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 880px;
+}
+
+.logo-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 880px;
+}
+*/
