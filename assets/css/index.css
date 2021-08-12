@@ -296,3 +296,23 @@ footer {
 .navbar-dark .navbar-toggler {
     border-color: transparent;
 } 
+
+/* EXEC Section */
+.exec img {
+    border-radius: 2%;
+}
+
+.exec .name {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.exec .position {
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #A89CC8;
+}
+
+.exec .year {
+    color: #EFA8B0;
+}
