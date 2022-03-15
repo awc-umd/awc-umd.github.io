@@ -13,29 +13,37 @@ h1 {
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   margin: 0.4em 0;
+  padding-top: 4rem;
+  padding-bottom: 10rem;
 }
 
+.about {
+  font-weight: 200;
+  font-size: 3.5em;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0.4em 0;
+}
+
+.info {
+  font-size: 2rem;
+  text-align: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 5px;
+  padding-top: 2.5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 2.5rem;
+  border: 5px double #EFA8B0;
+}
 
 .details {
   font-size: 3rem;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: -225px;
+  padding-top: 7.5rem;
 }
-
-.aboutTitle {
-    font-weight: 200;
-    font-size: 3.5em;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-  }
-
-.about {
-    font-size: 2.5rem;
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: -200px;
-  }
 
 .carousel {
   font-size: 3rem;
