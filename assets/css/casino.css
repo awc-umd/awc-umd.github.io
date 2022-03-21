@@ -46,12 +46,15 @@ h1 {
 }
 
 footer {
-    font-size: 1.2vw;
-    padding: 0vw 2.5vw;
-    line-height: 0.8;
-    width: 100vw;
+    font-size: 2rem;
+    padding-top: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 10rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 2rem;
     vertical-align: middle;
-    color: white;
+    color: #FFFFFF;
   }
 
 .carousel {
