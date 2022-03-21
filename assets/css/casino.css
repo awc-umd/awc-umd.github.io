@@ -45,6 +45,15 @@ h1 {
   padding-top: 7.5rem;
 }
 
+footer {
+    font-size: 1.2vw;
+    padding: 0vw 2.5vw;
+    line-height: 0.8;
+    width: 100vw;
+    vertical-align: middle;
+    color: white;
+  }
+
 .carousel {
   font-size: 3rem;
   font-family: futura;
