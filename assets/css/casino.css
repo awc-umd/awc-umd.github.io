@@ -46,7 +46,7 @@ h1 {
 }
 
 .footer {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 5px;
@@ -55,7 +55,7 @@ h1 {
   padding-right: 10rem;
   padding-bottom: 2.5rem;
   color: white;
-  padding: 2.5rem;
+  word-spacing: 10rem;
   }
 
 .carousel {
