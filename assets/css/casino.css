@@ -26,13 +26,13 @@ h1 {
 }
 
 .info {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: left;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 5px;
   padding-top: 2.5rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   padding-bottom: 2.5rem;
   border: 5px double #EFA8B0;
 }
@@ -46,7 +46,7 @@ h1 {
 }
 
 .footer {
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 5px;
@@ -55,7 +55,7 @@ h1 {
   padding-right: 10rem;
   padding-bottom: 2.5rem;
   color: white;
-  word-spacing: 10rem;
+  word-spacing: 5rem;
   }
 
 .carousel {
