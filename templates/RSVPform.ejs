@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RSVP Form</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <header><h1><strong>RSVP Form</strong></h1></header>
+    <!-- spot for firstname, lastname, email, phonenumber, how many tickets are you buying, dietary restrictions (as a checkbox),
+            have you sent money to our venmo (checkbox) (what's your username) -->
+    
+    <div>
+        <form action="./ConfirmationPage" method="post">
+            <fieldset>
+                <legend><strong>Contact Information</strong></legend>
+
+                <label><strong>First Name: </strong><input type="text" name="firstName" required/></label><br><br>
+
+                <label><strong>Last Name: </strong><input type="text" name="lastName" required/></label><br><br>
+
+                <label><strong>Email Address: </strong><input type="email" name="email" required/></label><br><br>
+
+                <label><strong>Phone Number: </strong></label>
+                <input id="phonenumber" type="text" name="phonenumber" maxlength="10" required> 
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend><strong>Ticket Information</strong></legend>
+                <label><strong>How many tickets are you buying? </strong></label>
+                <input type="number" name="numbertickets" min="1" max="5" required>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend><strong>Dietary Restrictions (Check all that apply)</strong></legend>
+                
+                <input type="checkbox" name= "vegetarian" value="Vegetarian">
+                <label>Vegetarian</label><br>
+		        <input type="checkbox" name= "vegan" value="Vegan">
+                <label>Vegan</label><br>
+                <input type="checkbox" name= "kosher" value="Kosher">
+                <label>Kosher</label><br>
+		        <input type="checkbox" name= "halal" value="Halal">
+                <label>Halal</label><br>
+                <input type="checkbox" name= "glutenFree" value="Gluten-Free">
+                <label>Gluten-Free</label><br>
+                <input type="checkbox" name= "lactoseIntolerant" value="Lactose Intolerant">
+                <label>Lactose Intolerant</label><br>
+                <input type="checkbox" name= "noRedMeat" value="No Red Meat">
+                <label>No Red Meat</label><br>
+                <input type="checkbox" name= "nutAllergy" value="Nut Allergy">
+                <label>Nut Allergy</label><br>
+                <input type="checkbox" name= "none" value="None">
+                <label>None</label><br>
+            </fieldset>
+            <br>
+            
+            <fieldset>
+                <legend><strong>Venmo Information</strong></legend>
+
+                <input type="checkbox" name="venmo" value="venmo">
+                <label>Have you sent money to our venmo?</label><br><br>
+
+                <label><strong>Venmo Username: </strong><input type="text" name="venmo" required/></label><br><br>
+
+            </fieldset>
+            <br>
+            
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+</html>
