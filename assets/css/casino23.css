@@ -61,7 +61,7 @@ body {
 h3 {
     text-align: center;
     /* color: #fefff1; */
-    color: white;
+    color: whitesmoke;
     font-style: italic;
     font-size: 30px;
 }
@@ -72,11 +72,11 @@ h3 {
 
 hr.new1 {
     border: 1px solid white;
-    width: 100%;
+    width: 95%;
 }
 
 hr {
-    border: 1px rgb(255, 243, 165); /* #8d2224 */
+    border: 1px white; /* #8d2224 */
     border-style: solid;
     width: 50%;
 }
@@ -91,17 +91,17 @@ form {
 }
 /* unvisited link */
 a:link {
-  color: white;
+  color: rgb(255, 243, 165)
 }
 
 /* visited link */
 a:visited {
-  color: gold;
+  color: white;
 }
 
 /* mouse over link */
 a:hover {
-  color: rgb(255, 243, 165);
+  color: gold;
 }
 
 .loader-wrapper {
