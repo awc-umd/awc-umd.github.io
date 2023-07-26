@@ -1,0 +1,123 @@
+html{
+    font-size: 20px;
+    font-family: "Garamond", Garamond, serif;
+    color: #760809;
+    background-color: #760809;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+}
+
+/* main body style */
+body {
+    background-color: #760809;
+    margin: 0;
+    text-align: center;
+}
+
+/* description style */
+.description {
+    color: #fefff1;
+    /* margin-top: 10px;
+    margin-bottom: 25px; */
+    padding: 80px;
+    text-align: center;
+    font-size: 23px;
+}
+
+/* image */
+/* .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+} */
+
+.gallery {
+    background-color: #760809;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.landingPage {
+    background-image: url("images/landing_page_img.png");
+    background-color: #760809;
+    height: 780px;
+    /* height: 750px; 
+    <img src="assets/css/images/landing_page_img.png" alt="gallery photo" style="width:100%; height:auto;"> */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    margin-top: 0%;
+}
+
+h3 {
+    text-align: center;
+    /* color: #fefff1; */
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 30px;
+}
+
+/* p {
+    padding: 30px;
+} */
+
+hr.new1 {
+    border: 1px solid rgb(255, 243, 165);
+    width: 80%;
+}
+
+hr {
+    border: 1px rgb(255, 243, 165);; /* #8d2224 */
+    border-style: solid;
+    width: 50%;
+}
+
+/* RSVP Link */
+#rsvplink {
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 243, 165);
+    margin-top: 80px;
+}
+/* unvisited link */
+a:link {
+  color: rgb(255, 243, 165)
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: gold;
+}
+
+/* footers */
+footer {
+  font-size: 20px;
+  text-align: left;
+}
+
+.footer {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 5px;
+    padding-top: 2.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 2.5rem;
+    color: white;
+    word-spacing: 5rem;
+}
