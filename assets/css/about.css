@@ -190,7 +190,7 @@ div.desc {
 
 .exec .position {
   color: #E4B7E5;
-    font-size: 18px;
+    font-size: 17px;
     font-family: "Poppins", serif;
 }
 
@@ -203,6 +203,10 @@ div.desc {
 .exec h4 {
   font-size: 15px;
   font-family: "Poppins", serif;
+}
+
+.exec {
+  padding: 7px;
 }
 
 .column1 {
