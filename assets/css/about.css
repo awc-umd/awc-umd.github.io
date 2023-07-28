@@ -150,9 +150,10 @@ div.desc {
 */
 
 .exec-board h2 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     font-family: "Poppins", serif;
+    font-style: italic;
 }
 /*
 .desc h5 {
