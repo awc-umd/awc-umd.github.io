@@ -1,0 +1,306 @@
+body {
+    background-color: #81D8D0;
+    /*background-image: url(background.png);
+    background-size: cover;
+    background-blend-mode: overlay;*/
+}
+
+#background {
+    height: 100vh; 
+    /* display: flex;  */
+    /* align-items: center; 
+    justify-content: center;  */
+}
+
+#background::before {
+    content: "";
+    position: absolute; 
+    top: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    left: 0px;
+    background-image: url("images/background.png");
+    background-size: contain;
+    opacity: 35%; /*22*/
+}
+
+p {
+    /* display: inline; */
+    text-align: center;
+    display: inline;
+
+}
+
+h1 {
+    text-align: center;
+    /* line-height: 280px; */
+    line-height: 15vw;
+
+}
+
+h5 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 8px;
+    font-family: 'Bodoni Moda';
+    color: #FFF9C7;
+
+}
+
+.box {
+    border: 3.5px solid white;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.title1 {
+    font-family: 'Imperial Script';
+    margin-top: 12vw;
+    /* font-size: 392vw; */
+    font-size: 20vw;
+}
+
+.title2 {
+    font-family: 'Bodoni Moda';
+    /* font-size: 283vw; */
+    font-size: 13vw;
+}
+
+/* 2 columns */
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 35px;
+  }
+  
+  .left {
+    width: 25%;
+  }
+  
+  .right {
+    width: 73%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  h3 {
+    margin-top: 2vw;
+    margin-left: 35px;
+    font-size: 4.5vw;
+    text-align: left;
+    font-family: 'Bodoni Moda';
+    font-weight: bolder;
+    color:#302929; 
+    line-height: 5vw;
+  }
+
+  .cursive {
+    font-family: 'Imperial Script';
+    font-size: 6vw;
+    margin-left: 22px;
+  }
+
+  p {
+    font-size: 1vw;
+    font-family: 'Cardo';
+    color: #302929;
+  }
+
+.rsvpLink {
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+a:link {
+  color: white; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFF9C7;
+  background-color: transparent;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+div.gallery {
+    float: left;
+    width: 180px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.sponsorRep {
+    padding: 50px;
+}
+
+hr {
+    color: #106080;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* icons */
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+.pointer {
+  font-size: 30px;
+  align-items: center;
+  color: black;
+}
+
+.rsvp {
+  text-align: center;
+  align-items: center;
+}
+
+.gallery {
+  /* margin-right: 30px;
+  margin-left: 50px; */
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.info {
+  text-align: center;
+  color: #FAF9F6;
+  font-family: 'Bodoni Moda';
+  font-size: 1.3vw;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: 0.2vw;
+}
+
+/* bouncing arrow feature */
+.contentDiv {
+  position: relative;
+}
+
+@keyframes bouncing {
+  0% {bottom: 0;}
+  50% {bottom: 20px;}
+  100% {bottom: 0;}
+}
+
+.arrow {
+  animation: bouncing 2s infinite ease-in-out;
+  bottom: 0;
+  display: block;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
+
+/* sponsors */
+#scroll-container {
+  overflow: hidden;
+  border-top-width: 20px;
+  border-bottom-width: 20px;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 50s linear infinite;
+  -webkit-animation: my-animation 50s linear infinite;
+  animation: my-animation 50s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+}
+
+.column_logo {
+    float: left;
+    width: 20%;
+    padding: 20px;
+    /* border: solid 2px; */
+  }
+
+  /* Clearfix (clear floats) */
+  .row_logo::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .thanks {
+    color: #f9f0d5;
+    font-family: 'Imperial Script';
+    font-size: 5vw;
+    letter-spacing: 5px;
+  }
+
+#other {
+    background-color: #182D2C;
+}
