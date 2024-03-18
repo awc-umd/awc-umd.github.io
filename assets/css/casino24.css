@@ -58,13 +58,13 @@ h5 {
     font-family: 'Imperial Script';
     margin-top: 12vw;
     /* font-size: 392vw; */
-    font-size: 25vw;
+    font-size: 30vw; /*25*/
 }
 
 .title2 {
     font-family: 'Bodoni Moda';
     /* font-size: 283vw; */
-    font-size: 15vw;
+    font-size: 20vw;
 }
 
 /* 2 columns */
