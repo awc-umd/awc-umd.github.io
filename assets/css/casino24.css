@@ -92,17 +92,17 @@ h5 {
   h3 {
     margin-top: 2vw;
     margin-left: 35px;
-    font-size: 4.7vw;
+    font-size: 5vw;
     text-align: left;
     font-family: 'Bodoni Moda';
-    font-weight: bolder;
+    /* font-weight: bolder; */
     color:#302929; 
     line-height: 5vw;
   }
 
   .cursive {
     font-family: 'Imperial Script';
-    font-size: 6vw;
+    font-size: 7vw;
     margin-left: 22px;
   }
 
@@ -208,7 +208,7 @@ hr {
   text-align: center;
   color: #FAF9F6;
   font-family: 'Bodoni Moda';
-  font-size: 1.3vw;
+  font-size: 1.4vw;
   font-style: italic;
   font-weight: 800;
   letter-spacing: 0.2vw;
@@ -229,11 +229,11 @@ hr {
   animation: bouncing 2s infinite ease-in-out;
   bottom: 0;
   display: block;
-  height: 50px;
+  height: 60px;
   left: 50%;
   margin-left: -25px;
   position: absolute;
-  width: 50px;
+  width: 60px;
 }
 
 /* sponsors */
