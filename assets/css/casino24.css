@@ -92,7 +92,7 @@ h5 {
   h3 {
     margin-top: 2vw;
     margin-left: 35px;
-    font-size: 5vw;
+    font-size: 4.7vw;
     text-align: left;
     font-family: 'Bodoni Moda';
     font-weight: bolder;
@@ -102,12 +102,12 @@ h5 {
 
   .cursive {
     font-family: 'Imperial Script';
-    font-size: 6.5vw;
+    font-size: 6vw;
     margin-left: 22px;
   }
 
   p {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: 'Cardo';
     color: #302929;
   }
