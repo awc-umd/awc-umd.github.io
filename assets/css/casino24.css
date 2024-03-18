@@ -295,12 +295,45 @@ hr {
   }
 
   .thanks {
-    color: #f9f0d5;
+    color: #0ABAB5;
+    /* color: #3B5998; */
     font-family: 'Imperial Script';
-    font-size: 5vw;
-    letter-spacing: 5px;
+    font-size: 5.5vw;
+    letter-spacing: 3px;
+  }
+
+  .thanks2 {
+    color: #0ABAB5;
+    font-style: italic;
   }
 
 #other {
-    background-color: #182D2C;
+    /* background-color: #182D2C; */
+    background-color: #fdfcf3;
+    padding: 0.5vw;
+    border:solid 2px #81D8D0;
+
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+/* 
+footer {
+  font-family: 'Bodoni Moda';
+  color: #302929;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1vw;
+} */
+
+
+div.scroll-container2 {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+div.scroll-container2 img {
+  padding: 5px;
 }
