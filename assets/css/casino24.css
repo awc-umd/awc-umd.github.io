@@ -40,7 +40,7 @@ h1 {
 
 h5 {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 8px;
     font-family: 'Bodoni Moda';
     color: #FFF9C7;
@@ -58,13 +58,13 @@ h5 {
     font-family: 'Imperial Script';
     margin-top: 12vw;
     /* font-size: 392vw; */
-    font-size: 20vw;
+    font-size: 25vw;
 }
 
 .title2 {
     font-family: 'Bodoni Moda';
     /* font-size: 283vw; */
-    font-size: 13vw;
+    font-size: 15vw;
 }
 
 /* 2 columns */
@@ -92,7 +92,7 @@ h5 {
   h3 {
     margin-top: 2vw;
     margin-left: 35px;
-    font-size: 4.5vw;
+    font-size: 5vw;
     text-align: left;
     font-family: 'Bodoni Moda';
     font-weight: bolder;
@@ -102,12 +102,12 @@ h5 {
 
   .cursive {
     font-family: 'Imperial Script';
-    font-size: 6vw;
+    font-size: 6.5vw;
     margin-left: 22px;
   }
 
   p {
-    font-size: 1vw;
+    font-size: 2vw;
     font-family: 'Cardo';
     color: #302929;
   }
