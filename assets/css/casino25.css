@@ -1,6 +1,9 @@
 /* floating lights code from: https://codepen.io/walpolea/pen/ZERZOaB?utm_source=chatgpt.com*/
 *, *::before, *::after { box-sizing:border-box }
 
+* {
+  pointer-events: auto;
+}
 body {
 	margin:0;
   background:#0d0d0d;
@@ -153,6 +156,7 @@ p {
 }
 
 .rsvp {
+  pointer-events:auto;
   background-color: #A42A04;
   color: #F5F5DC;
   border: 2px solid #F5F5DC; 
@@ -164,10 +168,12 @@ p {
   box-shadow: 0 16px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 #F5F5DC;
   opacity: 95%;
   margin-bottom: 1rem;
+  cursor: pointer;
+  z-index:10;
 }
 
 .rsvp:hover {
-  background-color: green;
+  background-color: #942000;
 }
 
 .subscript {
@@ -202,6 +208,7 @@ footer p{
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 
 #stars {
