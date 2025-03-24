@@ -93,7 +93,7 @@ h3 {
 
 .subtitle {
   font-family: 'Ballet';
-  font-size: 6rem;
+  font-size: 7rem;
 }
 
 .other {
@@ -135,6 +135,10 @@ p {
   margin-left: 10rem;
   margin-right: 10rem;
   text-align: center;
+}
+
+.content p {
+  font-size: 1.5rem;
 }
 
 .gallery {
