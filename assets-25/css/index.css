@@ -1,0 +1,252 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: white;
+  }
+  
+  .landing-page {
+    background-image: linear-gradient(rgba(239, 168, 176, 0.5), rgba(239, 168, 176, 0.5)), url("/assets-25/images/index_header.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .landing-page-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    transition: .8s ease;
+    opacity:0;
+  }
+
+  .landing-page:hover .landing-page-text {
+    opacity: 1;
+  }
+
+  .landing-page-text p {
+    font-size: 25px;
+  }
+
+
+* {box-sizing: border-box;}
+  
+
+
+/* socials */
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 12px;
+  text-align: center;
+}
+
+* { box-sizing: border-box;}
+
+.execboard {
+  padding: 30px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .execboard {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .execboard {
+    width: 100%;
+  }
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.column p {
+  text-align: left;
+  margin-right: 40px;
+  margin-left: 30px;
+  font-family: "Poppins", serif;
+  color: #18191A;
+}
+
+.column h5 {
+  text-align: left;
+  margin-right: 40px;
+  margin-left: 30px;
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  color: #A89CC8;
+}
+
+.image {
+  width: 70%;
+  margin-left: 70px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* socials/membership details */
+.section {
+  /* background-color: rgba(168, 156, 200, 0.45); */
+  color:#18191A;
+  /* background-color: rgba(125, 99, 195, 0.22); */
+}
+
+.membership {
+  padding: 20px;
+}
+
+.membership h3 {
+  /* color: #7A6BA0; */
+  margin-left: 80px;
+  font-size: 70px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.membership h6 {
+  margin-left: 40px;
+  font-size: 20px;
+  font-family: "Poppins", serif;
+  color:#A89CC8;
+}
+
+/* three equal columns that floats next to each other */
+.link-column {
+  float: left;
+  width: 33.33%;
+  padding: 40px;
+  text-align: center;
+}
+
+.link-column h2 {
+  font-family: "Poppins", serif;
+  font-size: 20px;
+  font-weight: bold;
+  color:#A89CC8;
+}
+
+.link-column p {
+  margin-right: 35px;
+  margin-left: 35px;
+  font-family: "Poppins", serif;
+  /* color: rgba(0, 0, 0, 0.5); */
+  color:#18191A;
+  font-size: 16px;
+}
+
+/* Clear floats after the columns */
+.link-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* sponsor section */
+.connect {
+  text-align: right;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.connect h3 {
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 70px;
+  color:#18191A;
+}
+
+.connect h6 {
+  text-align: right;
+  font-size: 20px;
+  margin-right: 18px;
+  font-family: "Poppins", serif;
+  color:#A89CC8;
+}
+
+.connect p {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+}
+
+.email {
+  color:skyblue;
+}
+
+.email:hover {
+  background-color:skyblue;
+  color: white;
+}
+
+.connect img {
+  width: 85%;
+  margin-right: 60px;
+}
+
+
+
+.test h2 {
+  width: 99%; 
+  text-align: right; 
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5); 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 70px;
+} 
+
+.test h2 span { 
+   background:#fff; 
+   padding:0 10px; 
+}
+
+.test2 h2 {
+  width: 95%; 
+  text-align: left; 
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5); 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 70px;
+  margin-left: 30px;
+} 
+
+.test2 h2 span { 
+   background:#fff; 
+   padding:0 10px; 
+}
+
+
+/* awc sponsor gallery */
+
+.sponsor-gallery {
+  display: flex;
+}
+
+.awc-sponsor {
+  flex: 33.33%;
+  padding: 20px;
+}
