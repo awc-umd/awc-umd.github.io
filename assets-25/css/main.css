@@ -9,13 +9,10 @@
     transition: width 0.3s ease;
 }
 
-/* 2) On hover, expand to full menu width */
 .sidebar:hover {
     width: 200px;
-    /* adjust to suit your link text */
 }
 
-/* 3) Style the always-visible tab */
 .sidebar-tab {
     height: 60px;
     display: flex;
@@ -27,25 +24,20 @@
 
 .sidebar-tab img {
     width: 30px;
-    /* your logo/icon size */
 }
 
-/* 4) Hidden menu links */
 .sidebar-menu {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    /* space below your tab */
     opacity: 0;
     transition: opacity 0.3s ease 0.1s;
 }
 
-/* 5) Fade menu in only when expanded */
 .sidebar:hover .sidebar-menu {
     opacity: 1;
 }
 
-/* 6) Basic link styling */
 .sidebar-menu a {
     padding: 10px 15px;
     color: white;
@@ -96,7 +88,6 @@
 
 .footer {
     text-align: center;
-    /* background-color: rgba(239, 168, 176, 0.5); */
     font-family: "Poppins", serif;
     font-size: 12px;
     color: #f09ba5;

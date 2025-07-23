@@ -26,6 +26,7 @@ body, html {
 
   .landing-page:hover .landing-page-text {
     opacity: 1;
+
   }
 
 * {box-sizing: border-box;}
@@ -45,14 +46,13 @@ div.desc {
 .execboard {
     padding: 30px;
     float: left;
-    /*width: 24.99999%;*/
     width: 24%;
 }
 
 @media only screen and (max-width: 1000px) {
     .execboard {
       width: 49.99999%;
-      margin: 6px 0;
+      margin: 10px 0;
     }
 }
   
@@ -62,56 +62,12 @@ div.desc {
     }
 }
 
-
-/* .aboutAWC h2{
-    text-align: center;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
-    font-size: 80px;
-}
-
-.aboutAWC p {
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: "Poppins", serif;
-}
-*/
-
-/* exec board section */
-/*
-.exec-board {
-    text-align: center;
-    font-family: "Poppins", serif;
-    font-weight: bold;
-    font-style: italic;
-}
-*/
-
 .exec-board h2 {
     font-size: 25px;
     text-align: center;
     font-family: "Poppins", serif;
     font-style: italic;
 }
-/*
-.desc h5 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 27px;
-    font-style: italic;
-}
-
-.desc h6 {
-    color: #E4B7E5;
-    font-size: 18px;
-    font-family: "Poppins", serif;
-}
-
-.desc p {
-    font-size: 15px;
-    font-family: "Poppins", serif;
-}
-*/
 
 /* EXEC Section */
 .exec img {
@@ -142,7 +98,31 @@ div.desc {
   padding: 7px;
 }
 
+/* 1) Turn your row into flex + wrap */
+.row.exec-row {
+  display: flex;
+  flex-wrap: wrap;          
+  justify-content: center;
+}
+
+/* 2) Let each “col exec” flex equally */
+.col.exec {
+  flex: 1 1 400px;
+  max-width: 300px;
+}
+
+/* 3) Make the image always fill its card */
+.col.exec img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+
+
+
 .column1 {
+    display: flex;
     float: left;
     width: 20%;
     padding: 40px;
@@ -168,13 +148,5 @@ div.desc {
     margin-left: 150px;
     font-size: 16.5px;
 }
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    font-family: "Poppins", serif;
-  }
 
   

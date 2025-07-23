@@ -92,7 +92,7 @@ div.desc {
   font-size: 50px;
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
-  color: #A89CC8;
+  color: #7259b7;
 }
 
 .image {
@@ -129,7 +129,7 @@ div.desc {
   margin-left: 40px;
   font-size: 20px;
   font-family: "Poppins", serif;
-  color:#A89CC8;
+  color:#7259b7;
 }
 
 /* three equal columns that floats next to each other */
@@ -144,7 +144,7 @@ div.desc {
   font-family: "Poppins", serif;
   font-size: 20px;
   font-weight: bold;
-  color:#A89CC8;
+  color:#7259b7;
 }
 
 .link-column p {
@@ -182,7 +182,7 @@ div.desc {
   font-size: 20px;
   margin-right: 18px;
   font-family: "Poppins", serif;
-  color:#A89CC8;
+  color:#7259b7;
 }
 
 .connect p {
