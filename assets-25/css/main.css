@@ -3,10 +3,16 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 75px;
+    width: 105px;
     overflow: hidden;
     z-index: 1000;
     transition: width 0.3s ease;
+}
+.sidebar p{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    color: #7259b7;
 }
 
 .sidebar:hover {
