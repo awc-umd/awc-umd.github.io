@@ -120,7 +120,6 @@ div.desc {
 }
 
 
-
 .column1 {
     display: flex;
     float: left;
@@ -147,6 +146,48 @@ div.desc {
     color: #18191A;
     margin-left: 150px;
     font-size: 16.5px;
+}
+
+/*Added by Sarah*/
+.col-md-4 h2 {
+  font-family: "Poppins";
+  font-size: 80px;
+  color:#7b66b5;
+}
+
+.col-md-8 p {
+  font-family: "Poppins";
+}
+
+
+.custom-outline-btn {
+  border: 2px solid #7b66b5; /* outline color */
+  color: #7b66b5;             /* text color */
+  background-color: transparent;
+  font-family: "Poppins", sans-serif; /* optional */
+  transition: 0.3s;
+}
+
+.custom-outline-btn:hover, .custom-outline-btn:focus {
+  background-color: #7b66b5;  /* fill on hover */
+  color: black;               /* text on hover */
+  border-color: #7b66b5;      /* keep border same color */
+}
+
+.modal-content {
+  font-family: "Poppins"; /* or your preferred font */
+  text-align: left;
+}
+
+.modal-title {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.modal-body {
+  font-size: 16px; /* optional sizing */
 }
 
   

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Bios</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container text-center mt-5">
+  <h1>Our Team</h1>
+  <div class="d-flex justify-content-center gap-3 mt-4">
+
+    <!-- Person 1 Button -->
+    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#bioModal1">
+      Alice Johnson
+    </button>
+
+    <!-- Person 2 Button -->
+    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#bioModal2">
+      Bob Smith
+    </button>
+
+  </div>
+</div>
+
+<!-- Modal for Alice -->
+<div class="modal fade" id="bioModal1" tabindex="-1" aria-labelledby="bioModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bioModalLabel1">Alice Johnson</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Alice Johnson is a front-end developer with a passion for creating beautiful, responsive web designs. She enjoys turning ideas into interactive user experiences and loves learning new technologies.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Bob -->
+<div class="modal fade" id="bioModal2" tabindex="-1" aria-labelledby="bioModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bioModalLabel2">Bob Smith</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Bob Smith is a data analyst who loves exploring patterns in large datasets. He focuses on turning complex data into actionable insights and is always excited to collaborate on analytics projects.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

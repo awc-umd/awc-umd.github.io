@@ -21,6 +21,10 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!--bootstrap-->
   <link href="assets-25/css/about.css" rel="stylesheet">
+
+  <!--bootstrap link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
   
   <link href="assets-25/css/main.css" rel="stylesheet">
   <!--fontawesome-->
@@ -54,22 +58,29 @@
 
   <br><br>
 
-  <!--About AWC-->
-  <div class="row">
-    <div class="column1" style="background-color:rgba(168, 156, 200, 0.42);">
-      <h2>Our Mission</h2>
+
+  <!--About AWC Container-->
+<div class="container my-5">
+  <div class="row align-items-center">
+    
+    <!-- Left column -->
+    <div class="col-md-4 p-4 rounded shadow-sm" style="background-color:rgba(168, 156, 200, 0.42);">
+      <h2 class="text-center">Our Mission</h2>
     </div>
 
-    <div class="column2"> 
-      <br><br>
-      <p>
+    <!-- Right column -->
+    <div class="col-md-8">
+      <p class="mt-3 mt-md-0">
         We strive to create an inclusive community to promote gender equality and empowerment
         in computing fields. Through fundraising, social events, academic and professional
         development programs, our association of women and men alike help create a strong
         and supportive place for everyone.
       </p>
     </div>
+
   </div>
+</div>
+
 
   <br><br><br><br>
 
@@ -80,8 +91,31 @@
     </div>
     <div class="container">
       <div class="row exec-row">
-        <div <div class="col exec">
+        <div class="col exec">
           <img src="assets-25/photos25/board_pics/sriya.jpeg" alt="Sriya Sogal Photo">
+          <button type="button" class="btn custom-outline-btn" data-bs-toggle="modal" data-bs-target="#bioSriya">
+            Sriya Sogal
+          </button>
+
+          
+          <div class="modal fade" id="bioSriya" tabindex="-1" aria-labelledby="bioModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="bioModalLabel1">Sriya Sogal</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Sriya is a student at the University of Maryland interested in the intersection of technology, law, and business, and how it can drive positive impact.
+                    Her interests span venture capital, intellectual property law, and tech policy, and she is especially excited about how emerging technologies shape our society. Whether supporting early-stage startups or exploring the future of AI regulation, she is driven by curiosity, purpose, and a desire to build a better future.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <h2 class="name">Sriya Sogal</h2>
           <h3 class="position">Co-President | Senior</h3>
           <h4>Computer Science Major | Public Policy Major</h4>
@@ -155,6 +189,11 @@
       </div>
     </div>
   </div>
+
+ 
+  <div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <footer class="footer">
     <p>&copy 2025, UMD Association for Women in Computing</p>
