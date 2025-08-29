@@ -4,7 +4,9 @@ body, html {
     background-color: white;
     color:#18191A;
   }
-  
+
+
+
   .landing-page {
     background-image: linear-gradient(rgba(239, 168, 176, 0.5), rgba(239, 168, 176, 0.5)), url("/assets-25/images/about_us_header.png");
     height: 50%;
@@ -13,6 +15,7 @@ body, html {
     background-size: cover;
     position: relative;
   }
+
   
   .landing-page-text {
     text-align: center;
@@ -26,7 +29,6 @@ body, html {
 
   .landing-page:hover .landing-page-text {
     opacity: 1;
-
   }
 
 * {box-sizing: border-box;}
@@ -97,6 +99,7 @@ div.desc {
 .exec {
   padding: 7px;
 }
+
 
 /* 1) Turn your row into flex + wrap */
 .row.exec-row {
@@ -191,3 +194,24 @@ div.desc {
 }
 
   
+/* img hover effect: */
+.img-hover-container img {
+  transition: 0.3s ease;
+}
+
+.img-hover-container .hover-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-hover-container:hover img {
+  filter: brightness(70%); /* dim effect */
+}
+
+.img-hover-container:hover .hover-btn {
+  opacity: 1; /* show button */
+}
