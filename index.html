@@ -15,159 +15,153 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
 
-  <!-- CSS -->
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <!--bootstrap-->
+  <!--CSS-->
   <link href="assets-25/css/index.css" rel="stylesheet">
-  
-  <link href="assets-25/css/main.css" rel="stylesheet">
-  <!--fontawesome-->
-  <script src="https://kit.fontawesome.com/c20a403ab1.js" crossorigin="anonymous"></script>
+  <!--navbar CSS-->
+  <link href="assets-25/css/navbar.css" rel="stylesheet">
 
 </head>
 
 <body>
-
   <div class="landing-page">
-
-    <div class="sidebar">
-      <!-- the “tab” that’s always visible -->
-      <div class="sidebar-tab">
-        <img src="assets-25/images/awclogo_transparent.png" alt="Menu" />
-        <p>Menu</p>
+    <!-- NAVBAR !!-->
+    <div class="container py-4">
+      <div class="d-flex justify-content-center">
+        <nav class="navbar navbar-expand-md navbar-light bg-white rounded-pill shadow px-3" role="navigation"
+          aria-label="Main navigation" style="max-width: 1000px;">
+          <div class="container-fluid position-relative p-0">
+            <!-- toggle (mobile) -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#awcNav"
+              aria-controls="awcNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- centered brand -->
+            <a class="navbar-brand mx-auto position-absolute start-50 translate-middle-x" href="#">
+              AWC @ UMD
+            </a>
+            <!-- collapse for left & right (mobile) -->
+            <div class="collapse navbar-collapse" id="awcNav">
+              <!-- left side -->
+              <ul class="navbar-nav me-auto align-items-center gap-2">
+                <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="casinonight26.html">Casino Night</a></li>
+              </ul>
+              <!-- right side -->
+              <ul class="navbar-nav ms-auto align-items-center gap-2">
+                <li class="nav-item"><a class="nav-link" href="">Preferences</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-
-      <!-- the hidden menu -->
-      <nav class="sidebar-menu">
-        <a href="index.html">Home</a>
-        <a href="events.html">Events</a>
-        <a href="about.html">About</a>
-        <a href="casinonight26.html">Casino Night</a>
-      </nav>
     </div>
-
-
+    <!-- Landing page text!!-->
     <div class="landing-page-text">
-      <h1 style="font-size:300px">AWC</h1>
-      <p>Association for Women in Computing <br> University of Maryland</p>
+      <h1 class="title">AWC</h1>
+      <p class="text">Association for Women in Computing <br> University of Maryland</p>
+      <p class="text">Check us out below!</p>
     </div>
+
   </div>
 
-  <br><br><br>
-
-  <!--About AWC-->
-  <div class="row">
-    <div class="column">
-      <img src="assets-25/images/awclogo_transparent.png" alt="logo" class="image">
-    </div>
-
-    <div class="column"> <!--style="background-color:rgba(168, 156, 200, 0.42);"-->
-      <br>
-      <h5>AWC @ UMD</h5>
-      <p>
-        The Association for Women in Computing strives to promote inclusivity in STEM by
-        giving underrepresented genders and allies in computing the platform to exceed.
-      </p>
-      <p>
-        We partner with companies to bring Tech Talks, career opportunities and professional
-        contacts to our members. Additionally, we host social events to connect our members and
-        allow them to celebrate their diversity and shared experiences. Our goal is to foster a
-        supportive community within the computing majors on campus and encourage minorities to
-        continue to pursue computing.
-      </p>
-    </div>
-  </div>
-
-  <br><br><br>
-
-  <!--Socials-->
-  <div class="section">
-
-    <div class="membership">
-      <br><br>
-
-      <!--<h3 class="community">Community</h3>-->
-      <div class="test2">
-        <h2><span>Join The Community</span></h2>
+  <!-- ABOUT SECTION-->
+  <div class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-12 col-md-5 text-center text-md-start">
+        <img src="assets-25/images/awclogo_transparent.png" alt="Association for Women in Computing at UMD logo"
+          class="img-fluid rounded-4 shadow-sm awc-about-logo">
       </div>
-      <br>
-      <h6>Become a member and join the AWC community!</h6>
+      <div class="col-12 col-md-7">
+        <h5 class="mb-3 awc-about-title">
+          <span class="accent">AWC</span> @ UMD
+        </h5>
+        <p class="lead mb-3 awc-descrp">
+          The Association for Women in Computing strives to promote inclusivity in STEM by
+          giving underrepresented genders and allies in computing the platform to exceed.
+        </p>
+        <p class="mb-0 awc-descrp">
+          We partner with companies to bring Tech Talks, career opportunities and professional
+          contacts to our members. Additionally, we host social events to connect our members and
+          allow them to celebrate their diversity and shared experiences. Our goal is to foster a
+          supportive community within the computing majors on campus and encourage minorities to
+          continue to pursue computing.
+        </p>
+      </div>
+    </div>
+  </div>
 
-      <br>
-
-      <div class="link-row">
-        <div class="link-column">
-
+  <!-- SOCIALS SECTION -->
+  <div class="container py-5">
+    <h2 class="mb-2 section-heading left"><span>Join the <span class="accent">Community</span></span></h2>
+    <p class="mb-4 subtitle">Become a member and join the AWC community!</p>
+    <!-- slack card -->
+    <div class="row g-3">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card-like p-4 h-100">
           <a href="https://umdawc.slack.com/signup#/domain-signup" target="_blank" rel="noopener noreferrer">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Slack_icon_2019.svg/2048px-Slack_icon_2019.svg.png"
-              alt="Slack" width="70" height="70"> <br>
+              alt="Slack">
           </a>
-          <br>
-          <h2>Join our Slack!</h2>
-          <p>
-            Stay up-to-date with events,
-            learn about opportunities, connect with other members!
-          </p>
+          <h3 class="h5 mt-3 mb-2">Join our Slack!</h3>
+          <p class="mb-0">Stay up-to-date with events, learn about opportunities, connect with other members!</p>
         </div>
-        <div class="link-column">
+      </div>
+      <!-- terplink card -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card-like purple p-4 h-100">
           <a href="https://umd.campuslabs.com/engage/organization/awc" target="_blank" rel="noopener noreferrer">
-            <img src="https://cdn-icons-png.flaticon.com/512/3077/3077443.png" alt="Terplink" width="70" height="70">
-            <br>
+            <img src="https://cdn-icons-png.flaticon.com/512/3077/3077443.png" alt="Terplink">
           </a>
-          <br>
-          <h2>Connect on Terplink!</h2>
-          <p>
-            Become an official member on Terp Link! Simply put in 'AWC' and click 'Connect'!
-          </p>
+          <h3 class="h5 mt-3 mb-2">Connect on Terplink!</h3>
+          <p class="mb-0">Become an official member on Terp Link! Simply put in 'AWC' and click 'Connect'!</p>
         </div>
-        <div class="link-column">
+      </div>
+      <!-- instagram card -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card-like p-4 h-100">
           <a href="https://www.instagram.com/umdawc/" target="_blank" rel="noopener noreferrer">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
-              alt="Instagram" width="70" height="70"> <br>
+              alt="Instagram">
           </a>
-          <br>
-          <h2>Follow our Instagram!</h2>
-          <p>
-            Follow to see photos from events, exclusive takeovers, and other opportunities!
-          </p>
+          <h3 class="h5 mt-3 mb-2">Follow our Instagram!</h3>
+          <p class="mb-0">Follow to see photos from events, exclusive takeovers, and other opportunities!</p>
         </div>
-
       </div>
     </div>
-
-
   </div>
 
-  <br><br><br><br>
-
-  <div class="connect">
-    <div class="test">
-      <h2><span>Connect with Us</span></h2>
-    </div>
-    <br>
-    <h6>Partner or connect with AWC to help further our mission</h6>
-    <br>
-    <p>AWC @ UMD is always looking for companies and organizations to host events with our members.
+  <!-- CONNECT SECTION-->
+  <div class="container py-5">
+    <h2 class="mb-2 section-heading right"><span><span class="accent">Connect </span>with Us</span></h2>
+    </section>
+    <h6 class=" mb-4 subtitle right">Partner or connect with AWC to help further our mission</h6>
+    <p class="mb-4 subtitle p">AWC @ UMD is always looking for companies and organizations to host events with our
+      members.
       If your company is interested in holding a tech talk, resume review, information session or
       any other kind of professional event with us, please contact us directly at <span
         class="email">awc.umcp@gmail.com</span>.
       <br> Thank you and we look forward to hearing from you!
     </p>
-
-    <br><br>
-
   </div>
-
-  <br>
-  <br>
 
   <footer class="footer">
     <p>&copy 2025, UMD Association for Women in Computing</p>
   </footer>
+
 </body>
 
 </html>

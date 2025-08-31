@@ -1,0 +1,69 @@
+:root {
+    --text: #080212;
+    --background: #fdfaff;
+    --primary: #dfccff;
+    --secondary: #ffd1e9;
+    --accent: #ec4b7b;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary) !important;
+    z-index: 1000;
+    box-shadow: 8 24px 24px var(--text);
+}
+
+.navbar-brand {
+    font-family: "Cormorant Garamond", serif;
+    font-size: x-large;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    display: block;
+    margin: 0;
+    padding: 10px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: var(--accent);
+    cursor: alias;
+}
+
+.footer {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    color: var(--text);
+}
+
+.footer p {
+    padding: 15px;
+}
+
+@media (max-width: 576px) {
+    .navbar.rounded-pill {
+        padding-top: .35rem;
+        padding-bottom: .35rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}
