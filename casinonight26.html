@@ -1,58 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>AWC @ UMD</title>
-	<!-- FAVICON -->
-	<link rel="apple-touch-icon" sizes="180x180" href="assets-25/favicon_io/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets-25/favicon_io/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets-25/favicon_io/favicon-16x16.png">
-    
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
 
-	<!-- CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"><!--bootstrap-->
-	<link href="assets-25/css/casino_night.css" rel="stylesheet">
-    <link href="assets-25/css/main.css" rel="stylesheet">
-	<!--fontawesome-->
-	<script src="https://kit.fontawesome.com/c20a403ab1.js" crossorigin="anonymous"></script>
-	
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWC @ UMD</title>
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets-25/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets-25/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets-25/favicon_io/favicon-16x16.png">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap">
+  <!-- bootstrap & splide -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS -->
+  <link href="assets-25/css/casino_night.css" rel="stylesheet">
+  <link href="assets-25/css/navbar.css" rel="stylesheet">
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script async src="https://www.instagram.com/embed.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const folder = 'assets-25/images/gallery-2025/';
+      const count = 20; // how many pages you exported
+      const ul = document.getElementById('event-slides');
+      for (let i = 1; i <= count; i++) {
+        const li = document.createElement('li');
+        li.className = 'splide__slide';
+        li.innerHTML = `<img src="${folder}image${i}.png" alt="Page ${i}" loading="lazy">`;
+        ul.appendChild(li);
+      }
+      new Splide('#gallery-2025', { type: 'loop', perPage: 4, focus: 'center', gap: '1rem', padding: '1rem' }).mount();
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const folder = 'assets-25/images/gallery-sponsor/';
+      const count = 8; // how many pages you exported
+      const ul = document.getElementById('pdf-slides');
+      for (let i = 1; i <= count; i++) {
+        const li = document.createElement('li');
+        li.className = 'splide__slide';
+        li.innerHTML = `<img src="${folder}${i}.png" alt="Page ${i}" loading="lazy">`;
+        ul.appendChild(li);
+      }
+      new Splide('#gallery-pdf', { type: 'loop', perPage: 2, focus: 'center', gap: '1rem', padding: '1rem' }).mount();
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const modalEl = document.getElementById('imgModal');
+      const modalImg = document.getElementById('modalImg');
+
+      function enableModal(selector) {
+        const root = document.querySelector(selector);
+        if (!root) return;
+        root.addEventListener('click', (e) => {
+          const img = e.target.closest('.splide__slide img');
+          if (!img) return;
+          modalImg.src = img.dataset.full || img.src;
+          modalImg.alt = img.alt || '';
+          bootstrap.Modal.getOrCreateInstance(modalEl).show();
+        });
+      }
+      enableModal('#gallery-2025');
+      enableModal('#gallery-pdf');
+    });
+  </script>
 </head>
 
 <body>
-    <div class="sidebar">
-      <!-- the “tab” that’s always visible -->
-      <div class="sidebar-tab">
-        <img src="assets-25/images/awclogo_transparent.png" alt="Menu" />
-        <p>Menu</p>
+  <!-- MODAL FOR GALLERY -->
+  <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-transparent border-0">
+        <button type="button" class="btn-close btn-close-white ms-auto me-2 mt-2" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+        <img id="modalImg" class="img-fluid rounded-3" alt="">
       </div>
+    </div>
+  </div>
 
-      <!-- the hidden menu -->
-      <nav class="sidebar-menu">
-        <a href="index.html">Home</a>
-        <a href="events.html">Events</a>
-        <a href="about.html">About</a>
-        <a href="casinonight26.html">Casino Night</a>
+  <!-- NAVBAR -->
+  <div class="container py-4">
+    <div class="d-flex justify-content-center">
+      <nav class="navbar navbar-expand-md navbar-light bg-transparent rounded-pill px-3" role="navigation"
+        aria-label="Main navigation" style="max-width: 1000px;">
+        <div class="container-fluid position-relative p-0">
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#awcNav"
+            aria-controls="awcNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand mx-auto position-absolute start-50 translate-middle-x" href="#">
+            AWC @ UMD
+          </a>
+          <div class="collapse navbar-collapse" id="awcNav">
+            <ul class="navbar-nav me-auto align-items-center gap-2">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link active" href="casinonight26.html">Casino Night</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto align-items-center gap-2">
+              <li class="nav-item"><a class="nav-link" href="">Preferences</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
+  </div>
 
+  <!-- ANIMATION -->
+  <div class="container py-5">
     <div class="animation">
-        <p class="line-1 anim-typewriter">AWC 2026 Casino Night Coming Soon...</p>
+      <p class="line-1 anim-typewriter">AWC 2026 Casino Night Coming Soon...</p>
     </div>
-
     <div class="description">
-        <p>
-            Thanks for checking out Casino Night, our annual spring event hosted and organized by AWC. <br>
-            See you in the next one!
-        </p>
+      <p>
+        Thanks for checking out Casino Night, our annual spring social hosted and organized by AWC. <br>
+        Scroll to see past event hightlights! <br>
+        See you in the next one!
+      </p>
     </div>
+  </div>
 
+  <!-- ABOUT SECTION -->
+  <div class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-12 col-md-6 col-lg-6 pe-md-4 pe-lg-5">
+        <h5 class="mb-3 awc-casino-title">Casino Night <span class="accent">2025</span></h5>
+        <p class="lead mb-3 casino-descrp">
+          Casino Night 2025 was hosted on April 24th with the theme “Hollywood Red Carpet.” Our 10th year anniversary
+          saw students come formally dressed for a night of food, games, and drinks surrounded by recruiters, staff, and
+          faculty. With a 400+ student turnout this year had many highlights to show off!
+        </p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 d-flex flex-wrap flex-sm-nowrap justify-content-center gap-3">
+        <a class="ig-card"
+          href="https://www.instagram.com/reel/DIR6EWrxz5S/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="
+          target="_blank" rel="noopener">
+          <img src="assets-25/images/ig-thumbs/reel1.png" alt="Reel 1">
+          <span class="ig-badge">Instagram</span>
+        </a>
+        <a class="ig-card"
+          href="https://www.instagram.com/reel/DJNLHOLxukj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+          target="_blank" rel="noopener">
+          <img src="assets-25/images/ig-thumbs/reel2.png" alt="Reel 2">
+          <span class="ig-badge">Instagram</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGE GALLERY SECTION -->
+  <div class="container py-5">
+    <h5 class="mb-2 awc-img-title">Image Gallery <span class="accent">2025</span></h5>
+    <section id="gallery-2025" class="splide mb-3">
+      <div class="splide__track">
+        <ul class="splide__list" id="event-slides"></ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- SPONSOR SECTION -->
+  <div class="container py-5">
+    <div class="row align-items-center g-4 mb-3 ">
+      <div class="col-12 col-md-6 order-2 order-md-2 d-flex justify-content-center">
+        <section id="gallery-pdf" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list" id="pdf-slides"></ul>
+          </div>
+        </section>
+      </div>
+      <div class="col-12 col-md-6 order-1 order-md-1 pe-md-4 pe-lg-5">
+        <h5 class="mb-3 awc-sponsor-title">Interested in <span class="accent">Sponsoring</span> Casino Night?</h5>
+        <p class="lead mb-3 sponsor-descrp">
+          If your company is interested in sponsoring Casino Night,
+          take a look at our Sponsorship Prospectus (pdf linked below). To hear more about our available tiers
+          and benefits,
+          please contact us directly at <span><a class="email" href="mailto:awc.umcp@gmail.com">awc.umcp@gmail.com</a></span>.
+          Thank you and we look forward to hearing from you!
+        </p>
+        <a class="prospectus mb-3" href="assets-25/AWC 2025-2026 Prospectus.pdf" target="_blank">Sponsorship
+          Prospectus</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" style="color:#f3edfd;">
+    <p>&copy 2025, UMD Association for Women in Computing</p>
+  </footer>
 </body>
-
-
 </html>

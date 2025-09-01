@@ -1,0 +1,83 @@
+:root {
+    --text: #080212;
+    --background: #fdfaff;
+    --primary: #dfccff;
+    --secondary: #ffd1e9;
+    --accent: #ec4b7b;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary) !important;
+    z-index: 1040;
+    box-shadow: 0 16px 40px rgba(0,0,0,.35), 0 2px 8px rgba(0,0,0,.25) !important;
+}
+
+.navbar-brand {
+    font-family: "Cormorant Garamond", serif;
+    font-size: x-large;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    display: block;
+    margin: 0;
+    padding: 10px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: var(--accent);
+    cursor: alias;
+}
+
+.footer {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    color: var(--text);
+}
+
+.footer p {
+    padding: 15px;
+}
+
+@media (max-width: 576px) {
+    .navbar.rounded-pill {
+        padding-top: .35rem;
+        padding-bottom: .35rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar .navbar-brand {
+        transition: opacity .2s ease;
+    }
+
+    .navbar .navbar-toggler[aria-expanded="true"]+.navbar-brand {
+        opacity: 0;
+        /* or use visibility:hidden */
+        pointer-events: none;
+        /* avoid accidental clicks */
+    }
+}
