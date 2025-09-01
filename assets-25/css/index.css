@@ -74,7 +74,7 @@ html {
   background-color: var(--background);
 }
 
-/* Variants */
+/* variants */
 .section-heading.left {
   text-align: left;
 }
@@ -165,7 +165,7 @@ html {
   box-shadow: none !important;
 }
 
-/* loosening the cap a bit on larger viewports if you like */
+/* loosening the cap a bit on larger viewports */
 @media (min-width: 992px) {
   .awc-about-logo {
     max-width: 450px;

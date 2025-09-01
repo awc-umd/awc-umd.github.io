@@ -28,54 +28,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" defer></script>
   <script async src="https://www.instagram.com/embed.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const folder = 'assets-25/images/gallery-2025/';
-      const count = 20; // how many pages you exported
-      const ul = document.getElementById('event-slides');
-      for (let i = 1; i <= count; i++) {
-        const li = document.createElement('li');
-        li.className = 'splide__slide';
-        li.innerHTML = `<img src="${folder}image${i}.png" alt="Page ${i}" loading="lazy">`;
-        ul.appendChild(li);
-      }
-      new Splide('#gallery-2025', { type: 'loop', perPage: 4, focus: 'center', gap: '1rem', padding: '1rem' }).mount();
-    });
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const folder = 'assets-25/images/gallery-sponsor/';
-      const count = 8; // how many pages you exported
-      const ul = document.getElementById('pdf-slides');
-      for (let i = 1; i <= count; i++) {
-        const li = document.createElement('li');
-        li.className = 'splide__slide';
-        li.innerHTML = `<img src="${folder}${i}.png" alt="Page ${i}" loading="lazy">`;
-        ul.appendChild(li);
-      }
-      new Splide('#gallery-pdf', { type: 'loop', perPage: 2, focus: 'center', gap: '1rem', padding: '1rem' }).mount();
-    });
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const modalEl = document.getElementById('imgModal');
-      const modalImg = document.getElementById('modalImg');
-
-      function enableModal(selector) {
-        const root = document.querySelector(selector);
-        if (!root) return;
-        root.addEventListener('click', (e) => {
-          const img = e.target.closest('.splide__slide img');
-          if (!img) return;
-          modalImg.src = img.dataset.full || img.src;
-          modalImg.alt = img.alt || '';
-          bootstrap.Modal.getOrCreateInstance(modalEl).show();
-        });
-      }
-      enableModal('#gallery-2025');
-      enableModal('#gallery-pdf');
-    });
-  </script>
+  <script src="assets-25/js/gallery.js" defer></script>
+  <script src="assets-25/js/site.js" defer></script>
 </head>
 
 <body>
@@ -92,32 +46,42 @@
 
   <!-- NAVBAR -->
   <div class="container py-4">
-    <div class="d-flex justify-content-center">
-      <nav class="navbar navbar-expand-md navbar-light bg-transparent rounded-pill px-3" role="navigation"
-        aria-label="Main navigation" style="max-width: 1000px;">
-        <div class="container-fluid position-relative p-0">
-          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#awcNav"
-            aria-controls="awcNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand mx-auto position-absolute start-50 translate-middle-x" href="#">
-            AWC @ UMD
-          </a>
-          <div class="collapse navbar-collapse" id="awcNav">
-            <ul class="navbar-nav me-auto align-items-center gap-2">
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-              <li class="nav-item"><a class="nav-link active" href="casinonight26.html">Casino Night</a></li>
-            </ul>
-            <ul class="navbar-nav ms-auto align-items-center gap-2">
-              <li class="nav-item"><a class="nav-link" href="">Preferences</a></li>
-              <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent rounded-pill px-3 awc-navbar js-animate-navbar">
+      <div class="container-fluid position-relative p-0">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#awcNav"
+          aria-controls="awcNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mx-auto position-absolute start-50 translate-middle-x" href="#">
+          AWC @ UMD
+        </a>
+        <div class="collapse navbar-collapse" id="awcNav">
+          <ul class="navbar-nav me-auto align-items-center gap-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link active" href="casinonight26.html">Casino Night</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto align-items-center gap-2">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="prefMenu" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Preferences
+              </a>
+              <ul class="nav-drop dropdown-menu dropdown-menu-end shadow" aria-labelledby="prefMenu">
+                <li class="px-3 py-2">
+                  <div class="form-check form-switch m-0">
+                    <input class="form-check-input" type="checkbox" id="toggleReduceMotion">
+                    <label class="form-check-label" for="toggleReduceMotion">Reduce motion</label>
+                  </div>
+                  <small class="text-muted d-block mt-1">Fewer animations & no auto-slide.</small>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="mailto:awc.umcp@gmail.com">Contact</a></li>
+          </ul>
         </div>
-      </nav>
-    </div>
+    </nav>
   </div>
 
   <!-- ANIMATION -->
@@ -188,7 +152,8 @@
           If your company is interested in sponsoring Casino Night,
           take a look at our Sponsorship Prospectus (pdf linked below). To hear more about our available tiers
           and benefits,
-          please contact us directly at <span><a class="email" href="mailto:awc.umcp@gmail.com">awc.umcp@gmail.com</a></span>.
+          please contact us directly at <span><a class="email"
+              href="mailto:awc.umcp@gmail.com">awc.umcp@gmail.com</a></span>.
           Thank you and we look forward to hearing from you!
         </p>
         <a class="prospectus mb-3" href="assets-25/AWC 2025-2026 Prospectus.pdf" target="_blank">Sponsorship
@@ -201,4 +166,5 @@
     <p>&copy 2025, UMD Association for Women in Computing</p>
   </footer>
 </body>
+
 </html>
