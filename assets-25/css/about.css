@@ -4,31 +4,16 @@ body, html {
     background-color: white;
     color:#18191A;
   }
-
-
-
+  
   .landing-page {
-    background-image: linear-gradient(rgba(239, 168, 176, 0.5), rgba(239, 168, 176, 0.5)), url("/assets-25/images/about_us_header.png");
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(#dfccff, #ffd1e9, #ffd1e9, white);
+    height: 100%;
     position: relative;
   }
 
-  
-  .landing-page-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: "Cormorant Garamond", serif;
-  }
-
-  .landing-page:hover .landing-page-text {
-    opacity: 1;
+  .landing-page-title {
+    font-size: 100px;
+    font-family: "Cormorant Garamond";
   }
 
 * {box-sizing: border-box;}
@@ -45,11 +30,6 @@ div.desc {
   
 * { box-sizing: border-box;}
   
-.execboard {
-    padding: 30px;
-    float: left;
-    width: 24%;
-}
 
 @media only screen and (max-width: 1000px) {
     .execboard {
@@ -65,10 +45,8 @@ div.desc {
 }
 
 .exec-board h2 {
-    font-size: 25px;
-    text-align: center;
-    font-family: "Poppins", serif;
-    font-style: italic;
+    font-size: 60px;
+    font-family: "Cormorant Garamond", serif;
 }
 
 /* EXEC Section */
@@ -79,7 +57,7 @@ div.desc {
 
 .exec .name {
   font-family: "Cormorant Garamond", serif;
-  font-size: 27px;
+  font-size: 30px;
   font-style: italic;
   margin-bottom: 0;
   padding: 5px;
@@ -87,13 +65,13 @@ div.desc {
 
 .exec .position {
   color: #E4B7E5;
-    font-size: 17px;
-    font-family: "Poppins", serif;
+    font-size: 20px;
+    font-family: "DM Sans", serif;
 }
 
 .exec h4 {
-  font-size: 15px;
-  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-family: "DM Sans", serif;
 }
 
 .exec {
@@ -177,15 +155,22 @@ div.desc {
   border-color: #7b66b5;      /* keep border same color */
 }
 
+
+.modal-header {
+  background-color: rgb(255, 241, 241);
+}
+
 .modal-content {
+  background-image: linear-gradient(#dfccff, #ffd1e9, white) !important;
   font-family: "Poppins"; /* or your preferred font */
   text-align: left;
 }
 
-.modal-title {
+h4.modal-title {
+  color: black;
   font-family: "Cormorant Garamond", serif;
+  font-size: 40px;
   font-style: italic;
-  font-size: 27px;
   font-weight: bold;
 }
 
@@ -193,6 +178,33 @@ div.desc {
   font-size: 16px; /* optional sizing */
 }
 
+.role-title {
+  color: #674a96; 
+  font-family: "DM Sans","Cormorant Garamond";
+  font-style: italic;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.role-text {
+  font-family: "DM Sans", serif;
+  font-style: italic;
+}
+
+.about-title {
+  color: #ff4da6; 
+  font-family: "DM Sans", serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about-text {
+  font-family: "DM Sans", serif;
+}
+
+.text-pink {
+  color: #ff4da6;
+}
   
 /* img hover effect: */
 .img-hover-container img {
@@ -214,4 +226,26 @@ div.desc {
 
 .img-hover-container:hover .hover-btn {
   opacity: 1; /* show button */
+  background-color:#ffd1e9;
+}
+
+
+/*role collapse*/
+.rotate-icon {
+  transition: transform 0.3s;
+}
+
+/* Rotate when expanded */
+.collapse.show + .rotate-icon,
+h5[aria-expanded="true"] .rotate-icon {
+  transform: rotate(180deg);
+}
+
+h5[role="button"] {
+  cursor: pointer;
+}
+
+h5[role="button"]:hover {
+  color: #ff77b3;       /* slightly brighter pink */
+  text-decoration: underline;
 }
