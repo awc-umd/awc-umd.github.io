@@ -1,0 +1,105 @@
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 105px;
+    overflow: hidden;
+    z-index: 1000;
+    transition: width 0.3s ease;
+}
+.sidebar p{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    color: #7259b7;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar-tab {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 222, 227);
+    cursor: pointer;
+}
+
+.sidebar-tab img {
+    width: 30px;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease 0.1s;
+}
+
+.sidebar:hover .sidebar-menu {
+    opacity: 1;
+}
+
+.sidebar-menu a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.sidebar-menu a:hover {
+    background: white;
+    color: pink;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: pink;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    display: block;
+    margin: 0;
+    padding: 10px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: pink;
+    cursor: alias;
+}
+
+.footer {
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    color: #f09ba5;
+}
+
+.footer p {
+    padding: 8px;
+    margin-left: 30px;
+}

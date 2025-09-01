@@ -24,6 +24,9 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" defer></script>
+
   <!--CSS-->
   <link href="assets-25/css/index.css" rel="stylesheet">
   <!--navbar CSS-->
@@ -36,28 +39,23 @@
     <!-- NAVBAR !!-->
     <div class="container py-4">
       <div class="d-flex justify-content-center">
-        <nav class="navbar navbar-expand-md navbar-light bg-white rounded-pill shadow px-3" role="navigation"
+        <nav class="navbar navbar-expand-md navbar-light bg-transparent rounded-pill px-3 " role="navigation"
           aria-label="Main navigation" style="max-width: 1000px;">
           <div class="container-fluid position-relative p-0">
-            <!-- toggle (mobile) -->
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#awcNav"
               aria-controls="awcNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- centered brand -->
             <a class="navbar-brand mx-auto position-absolute start-50 translate-middle-x" href="#">
               AWC @ UMD
             </a>
-            <!-- collapse for left & right (mobile) -->
             <div class="collapse navbar-collapse" id="awcNav">
-              <!-- left side -->
               <ul class="navbar-nav me-auto align-items-center gap-2">
-                <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
                 <li class="nav-item"><a class="nav-link" href="casinonight26.html">Casino Night</a></li>
               </ul>
-              <!-- right side -->
               <ul class="navbar-nav ms-auto align-items-center gap-2">
                 <li class="nav-item"><a class="nav-link" href="">Preferences</a></li>
                 <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
@@ -67,13 +65,13 @@
         </nav>
       </div>
     </div>
+
     <!-- Landing page text!!-->
     <div class="landing-page-text">
       <h1 class="title">AWC</h1>
       <p class="text">Association for Women in Computing <br> University of Maryland</p>
       <p class="text">Check us out below!</p>
     </div>
-
   </div>
 
   <!-- ABOUT SECTION-->
@@ -152,8 +150,7 @@
     <p class="mb-4 subtitle p">AWC @ UMD is always looking for companies and organizations to host events with our
       members.
       If your company is interested in holding a tech talk, resume review, information session or
-      any other kind of professional event with us, please contact us directly at <span
-        class="email">awc.umcp@gmail.com</span>.
+      any other kind of professional event with us, please contact us directly at <span><a class="email" href="mailto:awc.umcp@gmail.com">awc.umcp@gmail.com</a></span>.
       <br> Thank you and we look forward to hearing from you!
     </p>
   </div>

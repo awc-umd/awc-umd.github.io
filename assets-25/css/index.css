@@ -60,7 +60,28 @@ html {
 }
 
 /* COMMUNITY & CONNECT SECTION */
+.section-heading {
+  border-bottom: 2px solid var(--primary);
+  line-height: 0.1em;
+  margin-bottom: 20px;
+  font-size: clamp(2rem, 4vw + 0.5rem, 4rem);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 450;
+  position: relative;
+}
 
+.section-heading span {
+  background-color: var(--background);
+}
+
+/* Variants */
+.section-heading.left {
+  text-align: left;
+}
+
+.section-heading.right {
+  text-align: right;
+}
 
 .card-like {
   background-color: var(--secondary);
@@ -121,8 +142,14 @@ html {
   font-style: italic;
   color: #7259b7;
 }
-.accent { color: var(--accent) !important; }
-.awc-about-title { white-space: nowrap; }
+
+.accent {
+  color: var(--accent) !important;
+}
+
+.awc-about-title {
+  white-space: nowrap;
+}
 
 .awc-descrp {
   text-align: left;
@@ -151,28 +178,4 @@ html {
   --primary: #dfccff;
   --secondary: #ffd1e9;
   --accent: #ec4b7b;
-}
-
-
-.section-heading {
-  border-bottom: 2px solid var(--primary);
-  line-height: 0.1em;
-  margin-bottom: 20px;
-  font-size: clamp(2rem, 4vw + 0.5rem, 4rem);
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 450;
-  position: relative;
-}
-
-.section-heading span {
-  background-color: var(--background);
-}
-
-/* Variants */
-.section-heading.left {
-  text-align: left;
-}
-
-.section-heading.right {
-  text-align: right;
 }
