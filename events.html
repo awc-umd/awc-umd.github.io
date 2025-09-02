@@ -15,8 +15,11 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans">
 
   <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js" defer></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!--bootstrap-->
@@ -25,12 +28,13 @@
   <link href="assets-25/css/main.css" rel="stylesheet"><!--fontawesome-->
   <script src="https://kit.fontawesome.com/c20a403ab1.js" crossorigin="anonymous"></script>
 
+
+  <script src="assets-25/events.js" defer></script>
 </head>
 
 <body>
   
-  <div class="landing-page">
-    
+  <div class="landing-page container-fluid d-flex align-items-center">
     <div class="sidebar">
       <!-- the “tab” that’s always visible -->
       <div class="sidebar-tab">
@@ -47,90 +51,109 @@
       </nav>
     </div>
 
-    <div class="landing-page-text">
-      <h1 style="font-size:50px">Events</h1>
+    <div class="container mx-auto align-items-center justify-content-center">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="landing-page-title">Our <span class="text-pink">Events</span></h1>
+          <p class="landing-page-text">
+            Throughout the year, AWC will have social, professional, and educational events each month!
+        Follow us on social media (Instagram, Slack) to be up to date with all our event details
+        and add our events calendar to your Google calendar so that you never miss out!
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="container align-items-center py-5">
+            <h1 class="text-center mb-2 events-title">Some of our recent events!</h1>
+            <section id="posters" class="splide mb-3">
+              <div class="splide__track">
+                <ul class="splide__list" id="event-slides"></ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+
+      <!--BOXES-->
+      <div class="row g-3 boxes justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card-like p-4 h-100">
+            <a href="http://ter.ps/awcalumni" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn-icons-png.flaticon.com/512/4344/4344806.png" alt="Grad Cap" width="50" height="50"> <br>
+            </a>
+            <br>
+            <h2 class="h5 mt-3 mb-2">Graduated or Alumni?</h2>
+            <p>
+              Join our alumni database and stay in the loop with AWC!
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card-like purple p-4 h-100">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZW4Oay0YxCvua_wPrLRM0IojCPO4j9KuBLlC-SwdqydvJbA/viewform"
+            target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/282/282091.png" alt="Pencil" width="60" height="60"> <br>
+          </a>
+          <br>
+          <h2 class="h5 mt-3 mb-2">Become an Active Member!</h2>
+          <p>
+            Complete this form if you are interested in becoming an active member!
+          </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card-like p-4 h-100">
+            <a href="https://calendar.google.com/calendar/u/1?cid=bDAxdjRjdGNnb29ydGgzZTNiMzUwOTQwcG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+            target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/1024px-Google_Calendar_icon_%282020%29.svg.png"
+              alt="Google calendar" width="50" height="50"> <br>
+          </a>
+          <br>
+          <h2 class="h5 mt-3 mb-2">Add the AWC Calendar!</h2>
+          <p>
+            Add our events to your google calendar!
+          </p>
+          </div>
+        </div>
+
+      </div>
     </div>
+    
   </div>
 
   <br><br>
 
   <!--AWC events-->
-  <div class="row">
-    <div class="column1" style="background-color:rgba(168, 156, 200, 0.42);">
-      <h2>Our Events</h2>
-    </div>
-
-    <div class="column2"> <!--style="background-color:rgba(168, 156, 200, 0.42);"-->
-      <br><br>
-      <p>
-        Throughout the year, AWC will have social, professional, and educational events each month!
-        Follow us on social media (Instagram, Slack) to be up to date with all our event details
-        and add our events calendar to your Google calendar so that you never miss out!
-      </p>
-    </div>
-  </div>
-
-  <div class="link-row">
-
-    <div class="link-column">
-      <a href="http://ter.ps/awcalumni" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn-icons-png.flaticon.com/512/4344/4344806.png" alt="Grad Cap" width="50" height="50"> <br>
-      </a>
-      <br>
-      <h2>Graduated or an Alumni?</h2>
-      <p>
-        Join our alumni database and stay in the loop with AWC!
-      </p>
-    </div>
-
-    <div class="link-column">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZW4Oay0YxCvua_wPrLRM0IojCPO4j9KuBLlC-SwdqydvJbA/viewform"
-        target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn-icons-png.flaticon.com/512/282/282091.png" alt="Pencil" width="60" height="60"> <br>
-      </a>
-      <br>
-      <h2>Become an Active Member!</h2>
-      <p>
-        Complete this form if you are interested in becoming an active member!
-      </p>
-    </div>
-
-    <div class="link-column">
-      <a href="https://calendar.google.com/calendar/u/1?cid=bDAxdjRjdGNnb29ydGgzZTNiMzUwOTQwcG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-        target="_blank" rel="noopener noreferrer">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/1024px-Google_Calendar_icon_%282020%29.svg.png"
-          alt="Google calendar" width="50" height="50"> <br>
-      </a>
-      <br>
-      <h2>Add the AWC Calendar!</h2>
-      <p>
-        Add our events to your google calendar!
-      </p>
-    </div>
 
     <!-- BEGIN CONTENT -->
     <div class="container">
-
-      <!-- OUR MISSION SECTION-->
-      <div class="text-center mb-5 mt-3">
-        <header class="major">
-          <h2>Our Events</h2>
-        </header>
-        <p class="container">
-          Throughout the year, AWC will have social, professional, and educational events each month! Follow us on
-          social media to be up to date with all our event details and add our events calendar to your Google calendar
-          so that you never miss out!
-        </p>
-        <ul class="features">
+      <div class="row justify-content-center mb-5 mt-3">
+        
+        <!-- Header -->
+        <div class="col-12 text-center">
+          <header class="major">
+            <h1 class="calendar-title text-pink fw-bold">
+              Check out our upcoming events!<br><br>
+            </h1>
+          </header>
+        </div>
+        
+    
+        <!-- Calendar iframe -->
+        <div class="col-12 col-lg-10">
           <iframe
             src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23efa8b0&ctz=America%2FNew_York&src=bDAxdjRjdGNnb29ydGgzZTNiMzUwOTQwcG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23AD1457&showNav=1&showPrint=0&showTz=1&showCalendars=0&showDate=1&showTitle=1&title=AWC%20%40%20UMD%20Events"
-            style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        </ul>
-
+            style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no">
+          </iframe>
+        </div>
+    
       </div>
-
-    </div><!--end container-->
+    </div>
+    
 
     <!-- FOOTER -->
     <footer class="footer">

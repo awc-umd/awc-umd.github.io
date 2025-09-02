@@ -201,7 +201,7 @@ h4.modal-title {
 .about-text {
   font-family: "DM Sans", serif;
 }
-
+  
 .text-pink {
   color: #ff4da6;
 }
@@ -213,7 +213,7 @@ h4.modal-title {
 
 .img-hover-container .hover-btn {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
@@ -226,7 +226,11 @@ h4.modal-title {
 
 .img-hover-container:hover .hover-btn {
   opacity: 1; /* show button */
-  background-color:#ffd1e9;
+  background-color: #ff77b3;
+  border-color: #ff77b3;
+  color:white;
+  font-family: "DM Sans";
+  font-size:18px
 }
 
 
