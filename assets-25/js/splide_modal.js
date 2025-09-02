@@ -26,6 +26,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    const folder = 'assets-25/images/posters/';
+    const count = 4; // how many pages you exported
+    const ul = document.getElementById('poster-slides');
+    for (let i = 1; i <= count; i++) {
+        const li = document.createElement('li');
+        li.className = 'splide__slide';
+        li.innerHTML = `<img src="${folder}image${i}.jpeg" alt="Page ${i}" loading="lazy">`;
+        ul.appendChild(li);
+    }
+    new Splide('#posters', { type: 'loop', perPage: 3, focus: 'center', gap: '1rem', padding: '1rem' }).mount();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
     const modalEl = document.getElementById('imgModal');
     const modalImg = document.getElementById('modalImg');
 
@@ -42,4 +55,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     enableModal('#gallery-2025');
     enableModal('#gallery-pdf');
+    enableModal('#posters');
 });

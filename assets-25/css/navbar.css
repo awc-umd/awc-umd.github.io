@@ -119,7 +119,7 @@
 .nav-drop {
     border-radius: 15px;
     background-color: var(--background);
-    color: var(--text);
+    color: var(--text) !important;
 }
 .form-switch .form-check-input { 
   border-color: var(--accent);
@@ -133,7 +133,7 @@
     text-align: center;
     font-family: "Cormorant Garamond", serif;
     font-size: 20px;
-    color: var(--text);
+    color: var(--text) !important;
 }
 
 .footer p {

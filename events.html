@@ -17,37 +17,76 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans">
 
-  <!-- CSS -->
+  <!-- Splide -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js" defer></script>
+  <!--bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <!--bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script><!--bootstrap-->
+
+  <!-- Custom CSS-->
   <link href="assets-25/css/events.css" rel="stylesheet">
-  
-  <link href="assets-25/css/main.css" rel="stylesheet"><!--fontawesome-->
-  <script src="https://kit.fontawesome.com/c20a403ab1.js" crossorigin="anonymous"></script>
+  <link href="assets-25/css/navbar.css" rel="stylesheet">
 
-
-  <script src="assets-25/events.js" defer></script>
+  <!-- Custom JS -->
+  <script src="assets-25/js/site.js" defer></script>
+  <script src="assets-25/js/splide_modal.js" defer></script>
 </head>
 
 <body>
-  
-  <div class="landing-page container-fluid d-flex align-items-center">
-    <div class="sidebar">
-      <!-- the “tab” that’s always visible -->
-      <div class="sidebar-tab">
-        <img src="assets-25/images/awclogo_transparent.png" alt="Menu" />
-        <p>Menu</p>
+  <!-- MODAL FOR POSTERS -->
+  <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-transparent border-0">
+        <button type="button" class="btn-close btn-close-white ms-auto me-2 mt-2" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+        <img id="modalImg" class="img-fluid rounded-3" alt="">
       </div>
+    </div>
+  </div>
 
-      <!-- the hidden menu -->
-      <nav class="sidebar-menu">
-        <a href="index.html">Home</a>
-        <a href="events.html">Events</a>
-        <a href="about.html">About</a>
-        <a href="casinonight26.html">Casino Night</a>
+  <div class="landing-page container-fluid d-flex flex-column align-items-stretch">
+    <!-- NAVBAR -->
+    <div class="container py-4">
+      <nav class="navbar navbar-expand-md navbar-light bg-transparent rounded-pill px-3 awc-navbar js-animate-navbar">
+        <div class="container-fluid position-relative p-0">
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#awcNav"
+            aria-controls="awcNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand mx-auto position-absolute start-50 translate-middle-x" href="#">
+            AWC @ UMD
+          </a>
+          <div class="collapse navbar-collapse" id="awcNav">
+            <ul class="navbar-nav me-auto align-items-center gap-2">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="casinonight26.html">Casino Night</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto align-items-center gap-2">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="prefMenu" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Preferences
+                </a>
+                <ul class="nav-drop dropdown-menu dropdown-menu-end shadow" aria-labelledby="prefMenu">
+                  <li class="px-3 py-2">
+                    <div class="form-check form-switch m-0">
+                      <input class="form-check-input" type="checkbox" id="toggleReduceMotion">
+                      <label class="form-check-label" for="toggleReduceMotion">Reduce motion</label>
+                    </div>
+                    <small class="text-muted d-block mt-1">Fewer animations & no auto-slide.</small>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="mailto:awc.umcp@gmail.com">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
 
@@ -57,17 +96,17 @@
           <h1 class="landing-page-title">Our <span class="text-pink">Events</span></h1>
           <p class="landing-page-text">
             Throughout the year, AWC will have social, professional, and educational events each month!
-        Follow us on social media (Instagram, Slack) to be up to date with all our event details
-        and add our events calendar to your Google calendar so that you never miss out!
+            Follow us on social media (Instagram, Slack) to be up to date with all our event details
+            and add our events calendar to your Google calendar so that you never miss out!
           </p>
         </div>
 
         <div class="col-lg-6">
           <div class="container align-items-center py-5">
-            <h1 class="text-center mb-2 events-title">Some of our recent events!</h1>
+            <h1 class="text-center mb-2 poster-title">Some of our recent events!</h1>
             <section id="posters" class="splide mb-3">
               <div class="splide__track">
-                <ul class="splide__list" id="event-slides"></ul>
+                <ul class="splide__list" id="poster-slides"></ul>
               </div>
             </section>
           </div>
@@ -76,13 +115,12 @@
 
 
       <!--BOXES-->
-      <div class="row g-3 boxes justify-content-center">
+      <div class="row g-3 boxes justify-content-center mb-5">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card-like p-4 h-100">
             <a href="http://ter.ps/awcalumni" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/4344/4344806.png" alt="Grad Cap" width="50" height="50"> <br>
+              <img src="https://cdn-icons-png.flaticon.com/512/4344/4344806.png" alt="Grad Cap" width="50" height="50">
             </a>
-            <br>
             <h2 class="h5 mt-3 mb-2">Graduated or Alumni?</h2>
             <p>
               Join our alumni database and stay in the loop with AWC!
@@ -93,77 +131,68 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card-like purple p-4 h-100">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZW4Oay0YxCvua_wPrLRM0IojCPO4j9KuBLlC-SwdqydvJbA/viewform"
-            target="_blank" rel="noopener noreferrer">
-            <img src="https://cdn-icons-png.flaticon.com/512/282/282091.png" alt="Pencil" width="60" height="60"> <br>
-          </a>
-          <br>
-          <h2 class="h5 mt-3 mb-2">Become an Active Member!</h2>
-          <p>
-            Complete this form if you are interested in becoming an active member!
-          </p>
+              target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn-icons-png.flaticon.com/512/282/282091.png" alt="Pencil" width="60" height="60"> <br>
+            </a>
+            <h2 class="h5 mt-3 mb-2">Become an Active Member!</h2>
+            <p>
+              Complete this form if you are interested in becoming an active member!
+            </p>
           </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card-like p-4 h-100">
             <a href="https://calendar.google.com/calendar/u/1?cid=bDAxdjRjdGNnb29ydGgzZTNiMzUwOTQwcG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-            target="_blank" rel="noopener noreferrer">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/1024px-Google_Calendar_icon_%282020%29.svg.png"
-              alt="Google calendar" width="50" height="50"> <br>
-          </a>
-          <br>
-          <h2 class="h5 mt-3 mb-2">Add the AWC Calendar!</h2>
-          <p>
-            Add our events to your google calendar!
-          </p>
+              target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/1024px-Google_Calendar_icon_%282020%29.svg.png"
+                alt="Google calendar" width="50" height="50"> <br>
+            </a>
+            <h2 class="h5 mt-3 mb-2">Add the AWC Calendar!</h2>
+            <p>
+              Add our events to your google calendar so you never miss us!
+            </p>
           </div>
         </div>
 
       </div>
     </div>
-    
-  </div>
 
-  <br><br>
+  </div>
 
   <!--AWC events-->
 
-    <!-- BEGIN CONTENT -->
-    <div class="container">
-      <div class="row justify-content-center mb-5 mt-3">
-        
-        <!-- Header -->
-        <div class="col-12 text-center">
-          <header class="major">
-            <h1 class="calendar-title text-pink fw-bold">
-              Check out our upcoming events!<br><br>
-            </h1>
-          </header>
-        </div>
-        
-    
-        <!-- Calendar iframe -->
-        <div class="col-12 col-lg-10">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23efa8b0&ctz=America%2FNew_York&src=bDAxdjRjdGNnb29ydGgzZTNiMzUwOTQwcG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23AD1457&showNav=1&showPrint=0&showTz=1&showCalendars=0&showDate=1&showTitle=1&title=AWC%20%40%20UMD%20Events"
-            style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no">
-          </iframe>
-        </div>
-    
+  <!-- BEGIN CONTENT -->
+  <div class="container">
+    <div class="row justify-content-center mb-5 mt-3">
+
+      <!-- Header -->
+      <div class="col-12 text-center">
+        <header class="major">
+          <h1 class="calendar-title text-pink fw-bold">
+            Check out our upcoming events!<br><br>
+          </h1>
+        </header>
       </div>
+
+
+      <!-- Calendar iframe -->
+      <div class="col-12 col-lg-10">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23efa8b0&ctz=America%2FNew_York&src=bDAxdjRjdGNnb29ydGgzZTNiMzUwOTQwcG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23AD1457&showNav=1&showPrint=0&showTz=1&showCalendars=0&showDate=1&showTitle=1&title=AWC%20%40%20UMD%20Events"
+          style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no">
+        </iframe>
+      </div>
+
     </div>
-    
+  </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p>&copy 2025, UMD Association for Women in Computing</p>
-    </footer>
 
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-      crossorigin="anonymous"></script><!--bootstrap-->
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy 2025, UMD Association for Women in Computing</p>
+  </footer>
 </body>
 
 </html>

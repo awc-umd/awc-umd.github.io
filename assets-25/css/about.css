@@ -1,14 +1,15 @@
 body, html {
     height: 100%;
     margin: 0;
-    background-color: white;
-    color:#18191A;
+    background-color: var(--background);
+    color: var(--text);
   }
   
   .landing-page {
-    background-image: linear-gradient(#dfccff, #ffd1e9, #ffd1e9, white);
-    height: 100%;
-    position: relative;
+    background-image: linear-gradient(var(--primary), var(--secondary), var(--secondary), var(--background));
+    min-height: 100vh; 
+    height: auto; 
+    position: relative; 
   }
 
   .landing-page-title {
@@ -16,7 +17,21 @@ body, html {
     font-family: "Cormorant Garamond";
   }
 
-* {box-sizing: border-box;}
+  .mission-statement-descrp {
+    font-family:'DM Sans'; 
+    color:#18191A;
+  }
+
+@media screen and (max-width: 500px) {
+  .landing-page-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 50;
+  }
+  .mission-statement-title {
+    font-size: xx-large;
+  }
+}
  
 div.img {
     width: 100%;
@@ -62,7 +77,7 @@ div.desc {
 }
 
 .exec .position {
-  color: #E4B7E5;
+  color: var(--accent);
     font-size: 20px;
     font-family: "DM Sans", serif;
 }
@@ -101,7 +116,7 @@ div.desc {
 .col-md-4 h2 {
   font-family: "Poppins";
   font-size: 80px;
-  color:#7b66b5;
+  color: var(--title);
 }
 
 .col-md-8 p {
@@ -110,17 +125,17 @@ div.desc {
 
 
 .custom-outline-btn {
-  border: 2px solid #7b66b5; /* outline color */
-  color: #7b66b5;             /* text color */
+  border: 2px solid var(--title); /* outline color */
+  color: var(--title);             /* text color */
   background-color: transparent;
   font-family: "Poppins", sans-serif; /* optional */
   transition: 0.3s;
 }
 
 .custom-outline-btn:hover, .custom-outline-btn:focus {
-  background-color: #7b66b5;  /* fill on hover */
-  color: black;               /* text on hover */
-  border-color: #7b66b5;      /* keep border same color */
+  background-color: var(--title);  /* fill on hover */
+  color: var(--text);               /* text on hover */
+  border-color: var(--title);      /* keep border same color */
 }
 
 
@@ -129,13 +144,13 @@ div.desc {
 }
 
 .modal-content {
-  background-image: linear-gradient(#dfccff, #ffd1e9, white) !important;
+  background-image: linear-gradient(var(--primary), var(--secondary), var(--background)) !important;
   font-family: "Poppins"; /* or your preferred font */
   text-align: left;
 }
 
 h4.modal-title {
-  color: black;
+  color: var(--text);
   font-family: "Cormorant Garamond", serif;
   font-size: 40px;
   font-style: italic;
@@ -147,7 +162,7 @@ h4.modal-title {
 }
 
 .role-title {
-  color: #674a96; 
+  color: var(--title); 
   font-family: "DM Sans","Cormorant Garamond";
   font-style: italic;
   font-size: 27px;
@@ -194,9 +209,9 @@ h4.modal-title {
 
 .img-hover-container:hover .hover-btn {
   opacity: 1; /* show button */
-  background-color: #ff77b3;
-  border-color: #ff77b3;
-  color:white;
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color:var(--background);
   font-family: "DM Sans";
   font-size:18px
 }
@@ -218,6 +233,15 @@ h5[role="button"] {
 }
 
 h5[role="button"]:hover {
-  color: #ff77b3;       /* slightly brighter pink */
+  color: var(--accent);       /* slightly brighter pink */
   text-decoration: underline;
+}
+
+:root {
+    --text: #080212;
+    --background: #fdfaff;
+    --primary: #dfccff;
+    --secondary: #ffd1e9;
+    --accent: #ec4b7b;
+    --title: #7b66b5;
 }

@@ -24,12 +24,18 @@ html {
   place-items: center;
 }
 
-.title {
-  font-size: 80px;
-}
+  .title {
+    font-size: 300px;
+  }
 
-.text {
-  font-size: medium;
+  .text {
+    font-size: 30px;
+  }
+/* hide landing page text on screens smaller than 768px */
+@media (max-width: 767.98px) {
+  .landing-page-text {
+    display: none;
+  }
 }
 
 /* making text hover on large screens */
@@ -44,14 +50,6 @@ html {
     font-family: "Cormorant Garamond", serif;
     transition: .8s ease;
     opacity: 0;
-  }
-
-  .title {
-    font-size: 300px;
-  }
-
-  .text {
-    font-size: 30px;
   }
 
   .landing-page:hover .landing-page-text {
@@ -95,6 +93,10 @@ html {
   box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
   border-radius: 60px;
   text-align: center;
+}
+
+.card-like:hover {
+  background-color: var(--accent);
 }
 
 .card-like img {
@@ -159,7 +161,7 @@ html {
 
 /* keeps logo from getting huge on large screens */
 .awc-about-logo {
-  max-width: 320px;
+  max-width: 200px;
   border: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
