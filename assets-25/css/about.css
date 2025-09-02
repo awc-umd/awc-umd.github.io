@@ -18,7 +18,7 @@ body, html {
 
 * {box-sizing: border-box;}
  
-div.gallery img {
+div.img {
     width: 100%;
     height: auto;
 }
@@ -27,8 +27,6 @@ div.desc {
     padding: 12px;
     text-align: center;
 }
-  
-* { box-sizing: border-box;}
   
 
 @media only screen and (max-width: 1000px) {
@@ -100,36 +98,6 @@ div.desc {
   display: block;
 }
 
-
-.column1 {
-    display: flex;
-    float: left;
-    width: 20%;
-    padding: 40px;
-    margin-left: 100px;
-}
-
-.column1 h2 {
-    font-size: 80px;
-    font-family: "Poppins", serif;
-    color:#7b66b5;
-}
-
-.column2 {
-    float: right;
-    width: 65%;
-    padding: 30px;
-}
-
-.column2 p {
-    text-align: left;
-    font-family: "Poppins", serif;
-    color: #18191A;
-    margin-left: 150px;
-    font-size: 16.5px;
-}
-
-/*Added by Sarah*/
 .col-md-4 h2 {
   font-family: "Poppins";
   font-size: 80px;
