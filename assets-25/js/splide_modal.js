@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         li.innerHTML = `<img src="${folder}image${i}.jpeg" alt="Page ${i}" loading="lazy">`;
         ul.appendChild(li);
     }
-    new Splide('#posters', { type: 'loop', perPage: 3, focus: 'center', gap: '1rem', padding: '1rem' }).mount();
+    new Splide('#posters', { type: 'loop', perPage: 2, focus: 'center', gap: '1rem', padding: '1rem' }).mount();
 });
 
 document.addEventListener('DOMContentLoaded', () => {
