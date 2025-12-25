@@ -34,3 +34,6 @@ The images directory contains 3 subfolders (as of 12/24/25):
 
 #### js
 The js directory should only contain two files, site.js for the Navbar's Reduce Motion feature, and splide_modal.js for the Past Event Highlights and Sponsorship section. 
+
+#### AWC 25-26 Prospectus.pdf
+This file is linked at the bottom of casinonight26.html so that potential sponsors can view all our available tiers and benefits. 
