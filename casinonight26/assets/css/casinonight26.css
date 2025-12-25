@@ -1,0 +1,516 @@
+/* READ BEFORE:
+
+The top half of this file is entirely for the Navbar content, and the second half is for the actual page content. 
+This was done to simply reduce the number of css files being referenced
+
+This Casino Night used two specific fonts from Clue (1985)'s promotional material, 
+- Novel Gothic
+- ITC Kabel (Book, Bold, Demi, Medium, and Ultra versions) 
+*/
+
+/* NAVBAR CONTENT ~ do NOT CHANGE */
+:root {
+  --text: #080212;
+  --background: #fdfaff;
+  --primary: #AF5A41;
+  --secondary: #78090B;
+  --accent: #ec4b7b;
+}
+
+.navbar.awc-navbar {
+  /* stack above hero + stick to top */
+  position: sticky;
+  top: 0;
+  z-index: 1040;
+
+  /* center and limit width (tweak or remove if you want full-width) */
+  max-width: 1000px;
+  margin: 12px auto 0;
+
+  /* only the pill (::before) should be visible; kill base fill/shadow */
+  background: transparent !important;
+  box-shadow: none !important;
+
+  border-radius: 9999px;
+  /* pill shape for the overlay */
+}
+
+/* animated pill background + shadow */
+.navbar.awc-navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--secondary);
+  border: 1px solid rgba(255, 255, 255, .08);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .35), 0 2px 8px rgba(0, 0, 0, .25);
+  backdrop-filter: saturate(140%) blur(8px);
+  -webkit-backdrop-filter: saturate(140%) blur(8px);
+
+  /* expand from center */
+  transform: scaleX(0);
+  transform-origin: 50% 50%;
+  transition: transform .55s cubic-bezier(.2, .7, .2, 1);
+  pointer-events: none;
+  /* don’t block clicks */
+}
+
+.navbar.awc-navbar.is-in::before {
+  transform: scaleX(1);
+}
+
+/* fade/slide content after pill appears */
+.navbar.awc-navbar .navbar-brand,
+.navbar.awc-navbar .navbar-nav {
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity .35s ease .35s, transform .35s ease .35s;
+}
+
+.navbar.awc-navbar.is-in .navbar-brand,
+.navbar.awc-navbar.is-in .navbar-nav {
+  opacity: 1;
+  transform: none;
+}
+
+/* typography + link hover */
+.navbar.awc-navbar .navbar-brand {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1rem, 1.2vw + .75rem, 1.375rem);
+}
+
+.navbar.awc-navbar .nav-link {
+  border-radius: 999px;
+  padding: .5rem .75rem;
+  font-weight: 350;
+}
+
+.navbar.awc-navbar .nav-link:hover,
+.navbar.awc-navbar .nav-link:focus,
+.navbar.awc-navbar .nav-link.active {
+  background: var(--primary);
+}
+
+/* mobile: hide brand when the menu is expanded */
+@media (max-width: 767.98px) {
+  .navbar.awc-navbar .navbar-brand {
+    transition: opacity .2s ease;
+  }
+
+  .navbar.awc-navbar .navbar-toggler[aria-expanded="true"]+.navbar-brand {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* reduce motion */
+@media (prefers-reduced-motion: reduce) {
+
+  .navbar.awc-navbar::before,
+  .navbar.awc-navbar .navbar-brand,
+  .navbar.awc-navbar .navbar-nav {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* kill switch when toggles */
+:root[data-reduce-motion="true"] * {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+
+/* navbar instantly appears when reduced */
+:root[data-reduce-motion="true"] .awc-navbar::before,
+:root[data-reduce-motion="true"] .awc-navbar .navbar-brand,
+:root[data-reduce-motion="true"] .awc-navbar .navbar-nav {
+  transition: none !important;
+}
+
+.nav-drop {
+  border-radius: 15px;
+  background-color: var(--background);
+  color: var(--text) !important;
+}
+
+.form-switch .form-check-input {
+  border-color: var(--accent);
+}
+
+.form-switch .form-check-input:checked {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.footer {
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  color: var(--background) !important;
+}
+
+.footer p {
+  padding: 15px;
+}
+
+
+/* Webpage CONTENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*  FONTS  */
+/* credit to https://fontmeme.com/fonts/novel-gothic-extra-bold-agency-font/ for Novel Gothic */
+@font-face {
+  font-family: Novel Gothic;
+  src: url('novelGothic.otf');
+}
+
+/* credit to https://font.download/font/itc-kabel-std for ITC Kabel */
+@font-face {
+  font-family: ITC Kabel Bold;
+  src: url('itc-kabel-std/ITCKabelStdBold.TTF');
+}
+
+@font-face {
+  font-family: ITC Kabel Book;
+  src: url('itc-kabel-std/ITCKabelStdBook.TTF');
+}
+
+@font-face {
+  font-family: ITC Kabel Demi;
+  src: url('itc-kabel-std/ITCKabelStdDemi.TTF');
+}
+
+@font-face {
+  font-family: ITC Kabel Medium;
+  src: url('itc-kabel-std/ITCKabelStdMedium.TTF');
+}
+
+@font-face {
+  font-family: ITC Kabel Ultra;
+  src: url('itc-kabel-std/ITCKabelStdUltra.TTF');
+}
+
+/* pagewide classes and variables */
+:root {
+  --dark-text: #f3edfd;
+  --dark-background: #220C0A;
+  --dark-primary: #78090B;
+  --dark-secondary: #AF5A41;
+  --dark-accent: #FF7D21;
+}
+
+html,
+body {
+  background-color: var(--dark-background);
+}
+
+.accent {
+  color: var(--dark-accent) !important;
+  font-family: Novel Gothic, serif;
+}
+
+/* ANIMATION SECTION ~ should be REPLACED with the new landing page */
+
+/* Animation & code from: https://css-tricks.com/snippets/css/typewriter-effect/ */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.animation {
+  height: calc(100vh - 15em);
+  padding: 4em;
+  color: var(--dark-accent);
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  font-size: small;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 24em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.description {
+  text-align: center;
+  font-family: ITC Kabel Book, serif;
+  font-size: 12px;
+  color: var(--dark-text);
+}
+
+/* New landing page should have classes for all three text segments, 
+both buttons, and the background image */
+
+/* need to declare classes for mini navbar */
+
+
+/* ABOUT SECTION ~ no immediate changes*/
+.about {
+  background-image: linear-gradient(rgb(34, 12, 10, 0.85), rgb(34, 12, 10, 0.85)), url("../images/background-photos/about-background.jpeg");
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  background-position: center-top;
+}
+
+.casino-title {
+  text-align: center;
+  font-size: 48px;
+  font-family: ITC Kabel Book, serif;
+  color: var(--dark-text);
+  border-bottom: 2px solid var(--dark-primary);
+}
+
+.casino-descrp {
+  text-align: center;
+  font-family: ITC Kabel Book, serif;
+  font-size: 18px;
+  color: var(--dark-text);
+}
+
+.notice {
+  text-align: center;
+  font-family: ITC Kabel Book, serif;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 20px;
+  color: var(--dark-text);
+}
+
+.notice-accent {
+  color: var(--dark-accent);
+}
+
+
+/* Past Event Highlight SECTION ~ no immediate changes */
+.highlight-sponsor {
+  background-image: linear-gradient(rgb(34, 12, 10, 0.85), rgb(34, 12, 10, 0.85)), url("../images/background-photos/highlight-sponsor-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.event-title {
+  text-align: center;
+  font-size: 48px;
+  font-family: ITC Kabel Book, serif;
+  color: var(--dark-text);
+  border-bottom: 2px solid var(--dark-primary);
+}
+
+.event-descrp {
+  text-align: center;
+  font-family: ITC Kabel Book, serif;
+  font-size: 18px;
+  color: var(--dark-text);
+}
+
+#gallery-2025 .splide__slide {
+  height: 320px;
+}
+
+#gallery-2025 .splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Feature Sponsor SECTION ~ needs to be regularly updated with new sponsors*/
+.feature-title {
+  text-align: center;
+  font-size: 48px;
+  font-family: ITC Kabel Book, serif;
+  color: var(--dark-text);
+  border-bottom: 2px solid var(--dark-primary);
+}
+
+.feature-descrp {
+  text-align: center;
+  font-family: ITC Kabel Book, serif;
+  font-size: 18px;
+  color: var(--dark-text);
+}
+
+/* RSVP SECTION ~ needs to be updated with RSVP form once made */
+.rsvp {
+  background-image: linear-gradient(rgb(73, 9, 10, 0.7), rgba(73, 9, 10, 0.7)), url("../images/background-photos/rsvp-background.jpg");
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  background-position: center-top;
+}
+
+.rsvp-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 50;
+  font-family: ITC Kabel Book, serif;
+  color: var(--dark-text);
+  border-bottom: 2px solid var(--dark-primary);
+  margin-bottom: 20px;
+}
+
+.rsvp-descrp {
+  text-align: center;
+  font-family: ITC Kabel Book, serif;
+  font-size: 18px;
+  color: var(--dark-text);
+}
+
+/* SPONSOR SECTION ~ no new changes  */
+.awc-sponsor-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 50;
+  font-family: ITC Kabel Book, serif;
+  color: var(--dark-text);
+  border-bottom: 2px solid var(--dark-primary);
+}
+
+.sponsor-descrp {
+  text-align: center;
+  font-family: ITC Kabel Book, serif;
+  font-size: 18px;
+  color: var(--dark-text);
+}
+
+.email {
+  color: var(--dark-accent);
+}
+
+.email:hover {
+  background-color: var(--dark-accent);
+  color: var(--dark-primary);
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+.prospectus {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  color: var(--dark-accent);
+  font-family: ITC Kabel Book, serif;
+  font-size: 20px;
+}
+
+.prospectus:hover {
+  color: var(--dark-primary);
+  background-color: var(--dark-accent);
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+#gallery-pdf .splide__slide {
+  height: auto;
+}
+
+#gallery-pdf .splide__slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* DESKTOP CHANGES */
+@media (min-width: 992px) {
+
+  .casino-title {
+    text-align: right;
+    font-size: 50px;
+  }
+
+  .casino-descrp {
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .event-title {
+    text-align: left;
+    font-size: 70px;
+  }
+
+  .event-descrp {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .rsvp-title {
+    font-size: 90px;
+  }
+
+  .rsvp-descrp {
+    font-size: 20px;
+  }
+
+  .awc-sponsor-title {
+    text-align: right;
+    font-size: 70px;
+  }
+
+  .sponsor-descrp {
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .line-1 {
+    font-size: 180%;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+}
+
+#imgModal .modal-dialog {
+  max-width: 100%;
+  margin: 0;
+}
+
+#imgModal .modal-content {
+  background: transparent;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+#modalImg {
+  max-width: 100%;
+  max-height: 90vh;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
