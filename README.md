@@ -9,7 +9,7 @@ This is the official github pages repository for the AWC and Casino Night websit
 # AWC Github File Guide 
 Made by Zoya Rahman, 12/24/25, AWC Director of Design 2025'-2026'
 
-## assets-25
+## assets
 The current assets folder for the 25-26' term, containing the following subdirectories:
 - <b>css:</b> index.css, about.css, events.css,  and casino_night.css all live here. Additionally, the navbar for the entire site uses navbar.css, and every .html file has it linked.
 - <b>favicon_io:</b> Contains five favicon .pngs and the site.webmanifest detailing app behavior 
@@ -28,7 +28,7 @@ This directory contains its own README.md and file guide
 ## old_website_content
 An archive of past website material that I (zoya) made when trying to organize the Github. 
 <br>
-The <b>assets</b> folder was the original assets folder I inherited when working on the site. For organization's sake, I copied the material that was in active use to other directories. Currently, it is an archive with years worth of assets, much of it unlabelled, unused, and repeated. I have not goten the chance to clean through this entirely, but all current site content has been transferred to <u>assets-25</u> and nothing is being directed to here anymore. 
+The <b>assets</b> folder was the original assets folder I inherited when working on the site. For organization's sake, I copied the material that was in active use to other directories. Currently, it is an archive with years worth of assets, much of it unlabelled, unused, and repeated. I have not goten the chance to clean through this entirely, but all current site content has been transferred to <u>assets</u> and nothing is being directed to here anymore. 
 <br>
 The <b>older_website</b> directory was also inherited, and is what I imagined the website looked like prior to the 22-23' term. I assume my predecessor, like me, left the original website alone in this folder as reference material, and it remains accessible from here. 
 <br>
