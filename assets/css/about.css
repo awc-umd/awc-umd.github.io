@@ -1,0 +1,247 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+  }
+  
+  .landing-page {
+    background-image: linear-gradient(var(--primary), var(--secondary), var(--secondary), var(--background));
+    min-height: 100vh; 
+    height: auto; 
+    position: relative; 
+  }
+
+  .landing-page-title {
+    font-size: 100px;
+    font-family: "Cormorant Garamond";
+  }
+
+  .mission-statement-descrp {
+    font-family:'DM Sans'; 
+    color:#18191A;
+  }
+
+@media screen and (max-width: 500px) {
+  .landing-page-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 50;
+  }
+  .mission-statement-title {
+    font-size: xx-large;
+  }
+}
+ 
+div.img {
+    width: 100%;
+    height: auto;
+}
+  
+div.desc {
+    padding: 12px;
+    text-align: center;
+}
+  
+
+@media only screen and (max-width: 1000px) {
+    .execboard {
+      width: 49.99999%;
+      margin: 10px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .execboard {
+      width: 100%;
+    }
+}
+
+.exec-board h2 {
+    font-size: 60px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* EXEC Section */
+.exec img {
+  border-radius: 1%;
+  padding: 15px;
+}
+
+.exec .name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+.exec .position {
+  color: var(--accent);
+    font-size: 20px;
+    font-family: "DM Sans", serif;
+}
+
+.exec h4 {
+  font-size: 16px;
+  font-family: "DM Sans", serif;
+}
+
+.exec {
+  padding: 7px;
+}
+
+
+/* 1) Turn your row into flex + wrap */
+.row.exec-row {
+  display: flex;
+  flex-wrap: wrap;          
+  justify-content: center;
+}
+
+/* 2) Let each “col exec” flex equally */
+.col.exec {
+  flex: 1 1 400px;
+  max-width: 300px;
+}
+
+/* 3) Make the image always fill its card */
+.col.exec img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+
+.col-md-4 h2 {
+  font-family: "Poppins";
+  font-size: 80px;
+  color: var(--title);
+}
+
+.col-md-8 p {
+  font-family: "Poppins";
+}
+
+
+.custom-outline-btn {
+  border: 2px solid var(--title); /* outline color */
+  color: var(--title);             /* text color */
+  background-color: transparent;
+  font-family: "Poppins", sans-serif; /* optional */
+  transition: 0.3s;
+}
+
+.custom-outline-btn:hover, .custom-outline-btn:focus {
+  background-color: var(--title);  /* fill on hover */
+  color: var(--text);               /* text on hover */
+  border-color: var(--title);      /* keep border same color */
+}
+
+
+.modal-header {
+  background-color: rgb(255, 241, 241);
+}
+
+.modal-content {
+  background-image: linear-gradient(var(--primary), var(--secondary), var(--background)) !important;
+  font-family: "Poppins"; /* or your preferred font */
+  text-align: left;
+}
+
+h4.modal-title {
+  color: var(--text);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.modal-body {
+  font-size: 16px; /* optional sizing */
+}
+
+.role-title {
+  color: var(--title); 
+  font-family: "DM Sans","Cormorant Garamond";
+  font-style: italic;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.role-text {
+  font-family: "DM Sans", serif;
+  font-style: italic;
+}
+
+.about-title {
+  color: #ff4da6; 
+  font-family: "DM Sans", serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about-text {
+  font-family: "DM Sans", serif;
+}
+  
+.text-pink {
+  color: #ff4da6;
+}
+  
+/* img hover effect: */
+.img-hover-container img {
+  transition: 0.3s ease;
+}
+
+.img-hover-container .hover-btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-hover-container:hover img {
+  filter: brightness(70%); /* dim effect */
+}
+
+.img-hover-container:hover .hover-btn {
+  opacity: 1; /* show button */
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color:var(--background);
+  font-family: "DM Sans";
+  font-size:18px
+}
+
+
+/*role collapse*/
+.rotate-icon {
+  transition: transform 0.3s;
+}
+
+/* Rotate when expanded */
+.collapse.show + .rotate-icon,
+h5[aria-expanded="true"] .rotate-icon {
+  transform: rotate(180deg);
+}
+
+h5[role="button"] {
+  cursor: pointer;
+}
+
+h5[role="button"]:hover {
+  color: var(--accent);       /* slightly brighter pink */
+  text-decoration: underline;
+}
+
+:root {
+    --text: #080212;
+    --background: #fdfaff;
+    --primary: #dfccff;
+    --secondary: #ffd1e9;
+    --accent: #ec4b7b;
+    --title: #7b66b5;
+}

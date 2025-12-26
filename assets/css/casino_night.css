@@ -1,0 +1,270 @@
+:root {
+  --dark-text: #f3edfd;
+  --dark-background: #22142b;
+  --dark-primary: #674a96;
+  --dark-secondary: #5b2f46;
+  --dark-accent: #e8b5c4;
+}
+
+html,
+body {
+  background-color: var(--dark-background);
+}
+
+/* ANIMATION SECTION */
+/* Animation & code from: https://css-tricks.com/snippets/css/typewriter-effect/ */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.animation {
+  height: calc(100vh - 15em);
+  padding: 4em;
+  color: var(--dark-accent);
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  font-size: small;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 24em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.description {
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-size: 12px;
+  color: var(--dark-text);
+}
+
+/* ABOUT SECTION */
+.awc-casino-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 50;
+  font-family: "Cormorant Garamond", serif;
+  color: var(--dark-text);
+  border-bottom: 2px solid var(--dark-primary);
+}
+
+.accent {
+  color: var(--dark-accent) !important;
+}
+
+.casino-descrp {
+  text-align: center;
+  font-family: "DM Sans", serif;
+  font-size: 18px;
+  color: var(--dark-text);
+}
+
+.instagram-embed {
+  width: 100%;
+  max-width: clamp(280px, 60vw, 420px);
+  margin-inline: auto;
+  border-radius: 30px;
+}
+
+.ig-card {
+  position: relative;
+  display: block;
+  aspect-ratio: 4/5;
+  width: 220px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ig-card img {
+  width: 42vw;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform .25s ease, opacity .25s ease;
+  opacity: .95;
+}
+
+.ig-card:hover img {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+.ig-badge {
+  position: absolute;
+  bottom: .5rem;
+  right: .5rem;
+  font: 500 12px/1 "DM Sans", system-ui;
+  color: #111;
+  background-color: var(--dark-text);
+  border-radius: 999px;
+  padding: .25rem .5rem;
+}
+
+/* IMAGE SECTION */
+.awc-img-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 50;
+  font-family: "Cormorant Garamond", serif;
+  color: var(--dark-text);
+  border-bottom: 2px solid var(--dark-primary);
+  margin-bottom: 20px;
+}
+
+#gallery-2025 .splide__slide {
+  height: 320px;
+}
+
+#gallery-2025 .splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* SPONSOR SECTION */
+.awc-sponsor-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 50;
+  font-family: "Cormorant Garamond", serif;
+  color: var(--dark-text);
+  border-bottom: 2px solid var(--dark-primary);
+}
+
+.sponsor-descrp {
+  text-align: center;
+  font-family: "DM Sans", serif;
+  font-size: 18px;
+  color: var(--dark-text);
+}
+
+.email {
+  color: var(--dark-accent);
+}
+
+.email:hover {
+  background-color: var(--dark-accent);
+  color: var(--dark-primary);
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+.prospectus {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  color: var(--dark-accent);
+  font-family: "DM Sans", serif;
+  font-size: 20px;
+}
+
+.prospectus:hover {
+  color: var(--dark-secondary);
+  background-color: var(--dark-accent);
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+#gallery-pdf .splide__slide {
+  height: auto;
+}
+
+#gallery-pdf .splide__slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* DESKTOP CHANGES */
+@media (min-width: 992px) {
+  .awc-sponsor-title {
+    text-align: right;
+    font-size: 70px;
+  }
+
+  .sponsor-descrp {
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .awc-casino-title {
+    text-align: right;
+    font-size: 70px;
+  }
+
+  .casino-descrp {
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .awc-img-title {
+    font-size: 70px;
+  }
+
+  .line-1 {
+    font-size: 180%;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .ig-card img {
+    width: 100%;
+  }
+}
+
+#imgModal .modal-dialog {
+  max-width: 100%;
+  margin: 0;
+}
+
+#imgModal .modal-content {
+  background: transparent;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+#modalImg {
+  max-width: 100%;
+  max-height: 90vh;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
