@@ -88,6 +88,10 @@ body {
   color: var(--dark-text);
 }
 
+.footer, .footer p {
+  color: var(--dark-text);
+}
+
 .instagram-embed {
   width: 100%;
   max-width: clamp(280px, 60vw, 420px);
