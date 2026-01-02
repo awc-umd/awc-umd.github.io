@@ -4,6 +4,7 @@ html {
   margin: 0;
   background-color: var(--background);
   color: var(--text);
+  font-family: "DM Sans", serif;
 }
 
 .landing-page {
@@ -15,16 +16,16 @@ html {
 
 .landing-page-title {
   font-family: "Cormorant Garamond", serif;
-  font-size: 128px
+  font-size: 110px
 }
 
 .landing-page-text {
-  font-family: "DM Sans", serif;
   font-size: 23px;
 }
 
-.events-title {
+.poster-title {
   font-family: "Cormorant Garamond", serif;
+  font-size: 40px
 }
 
 .text-pink {
