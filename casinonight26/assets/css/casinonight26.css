@@ -211,7 +211,7 @@ body {
   width: 100%;
   min-height: 100vh;
   /*#af5b41*/
-  background-image: linear-gradient(rgba(239, 168, 168, 0.023), var(--dark-secondary)), url("/casinonight26/assets/images/background-photos/clue-poster.jpg");
+  background-image: linear-gradient(#af5b416d, #78090b77), url("/casinonight26/assets/images/background-photos/clue-actors.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,7 +253,7 @@ h3 {
   padding: 1rem 2rem;
   border-radius: 999px;
   font-family: ITC Kabel Bold, serif;
-  font-size: 30;
+  font-size: 50;
   color: #FFFFFF;
 }
 
@@ -263,6 +263,31 @@ h3 {
 
 .shadow-effect2 {
   text-shadow: 3px 3px 0px #474747;
+}
+
+.img-poster {
+  height: 350px;
+  border-radius: 15px;
+}
+
+.casino-subnav {
+  background-color: var(--dark-primary);
+  font-family: "ITC Kabel Bold", serif;
+}
+
+.casino-subnav .nav-link {
+  color: var(--dark-text);
+  padding: 0.75rem 0;
+  font-size: 20px
+}
+
+.casino-subnav .nav-link:hover,
+.casino-subnav .nav-link:focus {
+  color: var(--dark-accent);
+}
+
+.scroll-anchor {
+  scroll-margin-top: 7vh;
 }
 
 @keyframes typewriter {
