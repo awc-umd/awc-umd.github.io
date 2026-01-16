@@ -248,13 +248,21 @@ h3 {
   font-family: ITC Kabel Book, serif;
 }
 
-.btn-lg {
+.btn-landing {
   min-width: 250px;
   padding: 1rem 2rem;
   border-radius: 999px;
   font-family: ITC Kabel Bold, serif;
   font-size: 50;
   color: #FFFFFF;
+}
+
+.btn-rsvp {
+  border-radius: 999px;
+  border-color: #7A181A;
+  color: #FFFFFF;
+  font-family: ITC Kabel Bold, serif;
+  padding: 0.5rem 3rem;
 }
 
 .shadow-effect1 {
@@ -272,18 +280,13 @@ h3 {
 
 .casino-subnav {
   background-color: var(--dark-primary);
-  font-family: "ITC Kabel Bold", serif;
 }
 
 .casino-subnav .nav-link {
   color: var(--dark-text);
   padding: 0.75rem 0;
-  font-size: 20px
-}
-
-.casino-subnav .nav-link:hover,
-.casino-subnav .nav-link:focus {
-  color: var(--dark-accent);
+  font-size: 20px;
+  font-family: "ITC Kabel Bold", serif;
 }
 
 .scroll-anchor {
