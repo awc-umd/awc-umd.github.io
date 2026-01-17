@@ -94,11 +94,11 @@
         <!-- NEEDS: animation should be removed. Add movie image, event information, and two buttons-->
         <!-- ANIMATION -->
         <div class="container-fluid text-center mt-auto mx-auto">
-            <div class="mb-5 pb-3">
-                <h2 class="shadow-effect2">Association for Women In Computing Presents</h2>
-                <h1 class="accent mb-4 shadow-effect1">CASINO NIGHT (2026)</h1>
-                <h3>16 APRIL | 5:30 - 9:30 PM | Brendan Iribe Center Lobby</h3>
-            </div>
+            <div class="text-center mt-2 mt-md-5 mb-3 mb-md-5">
+                <h2>Association for Women In Computing Presents</h2>
+                <h1 class="accent mb-2 mb-md-4">CASINO NIGHT (2026)</h1>
+                <h3>16 APRIL | 5:30 – 9:30 PM | Brendan Iribe Center Lobby</h3>
+              </div>
             <div class="my-5 pb-4">
                 <button type="button" class="btn btn-light btn-lg btn-landing mx-3" style="background-color: #7A181A">Tickets OUT NOW</button>
                 <button type="button" class="btn btn-light btn-lg btn-landing mx-3" style="background-color: #88451B">Sponsor Us</button>
@@ -107,27 +107,50 @@
     </div>
 
     <!-- NEEDS: A second Navbar to navigate to each subsection of the Casino Night Page -->
-    <nav class="navbar navbar-expand-md navbar-dark casino-subnav sticky-top">
-        <div class="container justify-content-center">
-            <ul class="navbar-nav gap-5">
-                <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#highlights">Highlights</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#sponsors">Sponsors</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#rsvp">RSVP</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#prospectives">Prospective Sponsors Info</a>
-                </li>
+    <nav class="navbar navbar-expand-md navbar-dark casino-subnav sticky-top py-2 py-md-3">
+        <div class="container">
+          <span class="navbar-brand" style="font-family: ITC Kabel Bold">Casino Night</span>
+          <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#casinoSubnav"
+            aria-controls="casinoSubnav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Collapsible menu -->
+          <div class="collapse navbar-collapse justify-content-center" id="casinoSubnav">
+            <ul class="navbar-nav text-center gap-2 gap-md-5 mt-3 mt-md-0">
+      
+              <li class="nav-item">
+                <a class="nav-link py-1 py-md-2" href="#about">About</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link py-1 py-md-2" href="#highlights">Highlights</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link py-1 py-md-2" href="#sponsors">Sponsors</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link py-1 py-md-2" href="#rsvp">RSVP</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link py-1 py-md-2" href="#prospectives">
+                  Prospective Sponsors Info
+                </a>
+              </li>
+      
             </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
+      
   
 
     <!-- ABOUT SECTION -->

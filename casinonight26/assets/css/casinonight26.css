@@ -210,12 +210,11 @@ body {
 .landing-page {
   width: 100%;
   min-height: 100vh;
+  min-height: 100svh;
   /*#af5b41*/
   background-image: linear-gradient(#af5b416d, #78090b77), url("/casinonight26/assets/images/background-photos/clue-actors.jpg");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 .accent {
@@ -236,24 +235,28 @@ body {
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 60px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 25px;
   font-family: Novel Gothic, serif;
 }
 
 h3 {
+  font-size: 20px;
   font-family: ITC Kabel Book, serif;
 }
 
 .btn-landing {
-  min-width: 250px;
+  width: 80%;
+  max-width: 250px;  /* keeps it nice on mobile */
+  min-width: 0;      /* overrides your 250px on small screens */
   padding: 1rem 2rem;
   border-radius: 999px;
+  border-color: var(--dark-secondary);
   font-family: ITC Kabel Bold, serif;
-  font-size: 50;
+  font-size: 20px;
   color: #FFFFFF;
 }
 
@@ -280,6 +283,7 @@ h3 {
 
 .casino-subnav {
   background-color: var(--dark-primary);
+  line-height: 0.8;
 }
 
 .casino-subnav .nav-link {
@@ -290,7 +294,7 @@ h3 {
 }
 
 .scroll-anchor {
-  scroll-margin-top: 7vh;
+  scroll-margin-top: 5vh;
 }
 
 @keyframes typewriter {
@@ -495,7 +499,28 @@ both buttons, and the background image */
 
 /* DESKTOP CHANGES */
 @media (min-width: 992px) {
+  h1 {
+    font-size: 100px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    font-family: Novel Gothic, serif;
+  }
+  
+  h3 {
+    font-family: ITC Kabel Book, serif;
+  }
 
+  .btn-landing {
+    min-width: 250px;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    font-family: ITC Kabel Bold, serif;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+  
   .casino-title {
     text-align: right;
     font-size: 50px;
