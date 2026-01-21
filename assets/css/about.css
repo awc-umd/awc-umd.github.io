@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     background-color: var(--background);
     color: var(--text);
+    font-family: "DM Sans", serif;
   }
   
   .landing-page {

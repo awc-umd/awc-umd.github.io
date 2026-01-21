@@ -14,6 +14,7 @@
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans">
 
     <!-- Splide -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
@@ -92,126 +93,194 @@
 
         <!-- NEEDS: animation should be removed. Add movie image, event information, and two buttons-->
         <!-- ANIMATION -->
-        <div class="container py-5">
-            <div class="animation">
-                <p class="line-1 anim-typewriter">AWC 2026 Casino Night Coming Soon...</p>
-            </div>
-            <div class="description">
-                <p>
-                    Thanks for checking out Casino Night, our annual spring social hosted and organized by AWC. <br>
-                    Scroll to see past event hightlights, and we'll see you in the next one!
-                </p>
+        <div class="container-fluid text-center mt-auto mx-auto">
+            <div class="text-center mt-2 mt-md-5 mb-3 mb-md-5">
+                <h2>Association for Women In Computing Presents</h2>
+                <h1 class="accent mb-2 mb-md-4">CASINO NIGHT (2026)</h1>
+                <h3>16 APRIL | 5:30 – 9:30 PM | Brendan Iribe Center Lobby</h3>
+              </div>
+            <div class="my-5 pb-4">
+                <button type="button" class="btn btn-light btn-lg btn-landing mx-3" style="background-color: #7A181A">Tickets OUT NOW</button>
+                <button type="button" class="btn btn-light btn-lg btn-landing mx-3" style="background-color: #88451B">Sponsor Us</button>
             </div>
         </div>
     </div>
 
     <!-- NEEDS: A second Navbar to navigate to each subsection of the Casino Night Page -->
+    <nav class="navbar navbar-expand-md navbar-dark casino-subnav sticky-top py-2 py-md-3">
+        <div class="container">
+          <span class="navbar-brand" style="font-family: ITC Kabel Bold">Casino Night</span>
+          <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#casinoSubnav"
+            aria-controls="casinoSubnav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Collapsible menu -->
+          <div class="collapse navbar-collapse justify-content-center" id="casinoSubnav">
+            <ul class="navbar-nav text-center gap-2 gap-md-5 mt-3 mt-md-0">
+      
+              <li class="nav-item">
+                <a class="nav-link py-1 py-md-2" href="#about">About</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link py-1 py-md-2" href="#highlights">Highlights</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link py-1 py-md-2" href="#sponsors">Sponsors</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link py-1 py-md-2" href="#rsvp">RSVP</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link py-1 py-md-2" href="#prospectives">
+                  Prospective Sponsors Info
+                </a>
+              </li>
+      
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+  
 
     <!-- ABOUT SECTION -->
-    <div class="container py-5 about">
-        <div class="row align-items-center g-4">
-            <div class="col-12 col-md-6 order-1 order-md-1 pe-md-4 pe-lg-5">
-                <h5 class="mb-3 casino-title">What is <span class="accent">Casino Night?</span></h5>
-                <p class="lead mb-3 casino-descrp">
-                    Casino Night is AWC’s annual spring formal for students, faculty, and sponsors to meet and mingle!
-                    Dress up in your best formal attire, network with our corporate sponsors, eat some dinner, and more!
-                    If you have what it takes, play casino games dealt by your favorite faculty and enter into the
-                    raffles for a chance to win prizes!
+    <section id="about" class="scroll-anchor">
+        <div id="about" class="container py-5 about">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-6 order-1 order-md-1 pe-md-4 pe-lg-5">
+                    <h5 class="mb-3 casino-title">What is <span class="accent">Casino Night?</span></h5>
+                    <p class="lead mb-3 casino-descrp">
+                        Casino Night is AWC’s annual spring formal for students, faculty, and sponsors to meet and mingle!
+                        Dress up in your best formal attire, network with our corporate sponsors, eat some dinner, and more!
+                        If you have what it takes, play casino games dealt by your favorite faculty and enter into the
+                        raffles for a chance to win prizes!
+                        <br><br>
+                        Casino Night started 11 years ago as a way for CS students and friends to meet with each other and
+                        sponsors. In honor of our 11th year, our theme is: <span class=accent>Clue (1985)</span>!
+                        Inspired by the classic thriller, we ensure a night of memories, mystery, and more!
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 order-2 order-md-2 d-flex justify-content-center">
+                    <img src="/casinonight26/assets/images/background-photos/clue-poster.webp" 
+                        alt="Clue (1985) movie poster" 
+                        class="img-fluid img-poster">
+                    <!-- NEEDS: import the clue movie poster (high quality image)-->
+                </div>
+            </div>
+            <br>
+            <div class="notice">
+                <p>
+                    Casino Night is a department wide formal for computing majors (and their friends of any <span
+                        class=notice-accent>major</span> or <span class=notice-accent>gender</span>)
+                    hosted by the Association of Women in Computing. The event will be held on the ground floor lobby of the
+                    Brendan Iribe Center for Computer Science and Engineering on April 16th, 2026, from 5:30 to 9:30 PM.
                     <br><br>
-                    Casino Night started 11 years ago as a way for CS students and friends to meet with each other and
-                    sponsors. In honor of our 11th year, our theme is: <span class=accent>Clue (1985)</span>!
-                    Inspired by the classic thriller, we ensure a night of memories, mystery, and more!
+                    Tickets include 1 free drink, a meal, games, and a night of action!
                 </p>
             </div>
-            <div class="col-12 col-md-6 order-2 order-md-2 d-flex justify-content-center">
-
-                <!-- NEEDS: import the clue movie poster (high quality image)-->
-
-            </div>
         </div>
-        <br>
-        <div class="notice">
-            <p>
-                Casino Night is a department wide formal for computing majors (and their friends of any <span
-                    class=notice-accent>major</span> or <span class=notice-accent>gender</span>)
-                hosted by the Association of Women in Computing. The event will be held on the ground floor lobby of the
-                Brendan Iribe Center for Computer Science and Engineering on April 16th, 2026, from 5:30 to 9:30 PM.
-                <br><br>
-                Tickets include 1 free drink, a meal, games, and a night of action!
-            </p>
-        </div>
-    </div>
+    </section>
 
     <!-- Past Event Highlights AND Featured Sponsors SECTION -->
     <div class="container py-5 highlight-sponsor">
         <!-- Past Event Highlight SECTION -->
-        <div class="row align-items-center g-4">
-            <div class="col-12 col-md-6 order-1 order-md-1 pe-md-4 pe-lg-5">
-                <section id="gallery-2025" class="splide mb-3">
-                    <div class="splide__track">
-                        <ul class="splide__list" id="event-slides"></ul>
-                    </div>
-                </section>
+        <section id="highlights" class="scroll-anchor">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-6 order-1 order-md-1 pe-md-4 pe-lg-5">
+                    <section id="gallery-2025" class="splide mb-3">
+                        <div class="splide__track">
+                            <ul class="splide__list" id="event-slides"></ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-12 col-md-6 order-2 order-md-2 pe-md-4 pe-lg-5">
+                    <h5 class="mb-3 event-title">Past Event <span class="accent">Highlights</span></h5>
+                    <p class="lead mb-3 event-descrp">
+                        Not sure what to expect? Browse our <span class=accent>2025</span> Casino Night Highlights for some
+                        inspiration on what to
+                        wear, play, and eat at this years event!
+                        <br><br>
+                        If you’re still curious, stay up to date with our <a class=accent
+                            href="https://www.instagram.com/umdawc">socials</a> so you know whats coming up for ticket
+                        discounts, outfit inspiration, and more!
+                    </p>
+                </div>
             </div>
-            <div class="col-12 col-md-6 order-2 order-md-2 pe-md-4 pe-lg-5">
-                <h5 class="mb-3 event-title">Past Event <span class="accent">Highlights</span></h5>
-                <p class="lead mb-3 event-descrp">
-                    Not sure what to expect? Browse our <span class=accent>2025</span> Casino Night Highlights for some
-                    inspiration on what to
-                    wear, play, and eat at this years event!
-                    <br><br>
-                    If you’re still curious, stay up to date with our <a class=accent
-                        href="https://www.instagram.com/umdawc">socials</a> so you know whats coming up for ticket
-                    discounts, outfit inspiration, and more!
-                </p>
-            </div>
-        </div>
+        </section>
         <br>
         <br>
         <!-- Featured Sponsorship SECTION -->
-        <div class="feature-sponsor">
-            <h5 class="feature-title">Featuring our 2026 <span class="accent">Sponsors</span></h5>
-            <p class="feature-descrp">Thank you for your continued support!</p>
+        <section id="sponsors" class="scroll-anchor">
+            <div class="feature-sponsor pt-4">
+                <h5 class="feature-title">Featuring our 2026 <span class="accent">Sponsors</span></h5>
+                <p class="feature-descrp">Thank you for your continued support!</p>
 
-            <!-- NEEDS: Pictures of our sponsors, need to check who qualifies to be added here-->
-
-        </div>
-    </div>
-
-    <!-- RSVP SECTION -->
-    <div class="container py-5 rsvp">
-        <h5 class="mb-2 rsvp-title"><span class="accent">TICKETS</span> OUT NOW!</h5>
-        <p class="rsvp-descrp">Fill out our quick RSVP form and grab your ticket today!</p>
-
-        <!-- NEEDS: Button linking to the real RSVP form-->
-    </div>
-
-    <!-- SPONSOR SECTION -->
-    <div class="container py-5">
-        <div class="row align-items-center g-4 mb-3 ">
-            <div class="col-12 col-md-6 order-2 order-md-2 d-flex justify-content-center">
-                <section id="gallery-pdf" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list" id="pdf-slides"></ul>
+                <!-- NEEDS: Pictures of our sponsors, need to check who qualifies to be added here-->
+                <div class="container mt-4">
+                    <div class="row align-items-center">
+                      <div class="col-6 col-md-4 col-lg-3 text-center">
+                        <img
+                          src="/casinonight26/assets/images/logos/Celsius.png"
+                          alt="Celsius logo"
+                          class="img-fluid sponsor-logo"
+                        >
+                      </div>
+                      <!--logos to be added-->
                     </div>
-                </section>
+                  </div>
+                  
             </div>
-            <div class="col-12 col-md-6 order-1 order-md-1 pe-md-4 pe-lg-5">
-                <h5 class="mb-3 awc-sponsor-title">Interested in <span class="accent">Sponsoring</span> Casino Night?
-                </h5>
-                <p class="lead mb-3 sponsor-descrp">
-                    If your company is interested in sponsoring Casino Night,
-                    take a look at our Sponsorship Prospectus (pdf linked below). To hear more about our available tiers
-                    and benefits,
-                    please contact us directly at <span><a class="email"
-                            href="mailto:awc.umcp@gmail.com">awc.umcp@gmail.com</a></span>.
-                    Thank you and we look forward to hearing from you!
-                </p>
-                <a class="prospectus mb-3" href="assets/AWC 25-26 Prospectus.pdf" target="_blank">Sponsorship
-                    Prospectus</a>
+        </section>
+    </div>
+
+    <section id="rsvp" class="scroll-anchor">
+    <!-- RSVP SECTION -->
+        <div class="container py-5 rsvp text-center">
+            <h5 class="mb-2 rsvp-title"><span class="accent">TICKETS</span> OUT NOW!</h5>
+            <p class="rsvp-descrp">Fill out our quick RSVP form and grab your ticket today!</p>
+            <!-- NEEDS: Button linking to the real RSVP form-->
+            <button type="button" class="btn btn-light btn-lg btn-rsvp mt-4" style="background-color: #7A181A">RSVP Here</button>
+        </div>
+    </section>
+
+    <!-- PROSPECTIVE SPONSOR SECTION -->
+    <section id="prospectives" class="scroll-anchor">
+        <div class="container py-5">
+            <div class="row align-items-center g-4 mb-3 ">
+                <div class="col-12 col-md-6 order-2 order-md-2 d-flex justify-content-center">
+                    <section id="gallery-pdf" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list" id="pdf-slides"></ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-12 col-md-6 order-1 order-md-1 pe-md-4 pe-lg-5">
+                    <h5 class="mb-3 awc-sponsor-title">Interested in <span class="accent">Sponsoring</span> Casino Night?
+                    </h5>
+                    <p class="lead mb-3 sponsor-descrp">
+                        If your company is interested in sponsoring Casino Night,
+                        take a look at our Sponsorship Prospectus (pdf linked below). To hear more about our available tiers
+                        and benefits,
+                        please contact us directly at <span><a class="email"
+                                href="mailto:awc.umcp@gmail.com">awc.umcp@gmail.com</a></span>.
+                        Thank you and we look forward to hearing from you!
+                    </p>
+                    <a class="prospectus mb-3" href="assets/AWC 25-26 Prospectus.pdf" target="_blank">Sponsorship
+                        Prospectus</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer class="footer" style="color:#f3edfd;">
         <p>&copy 2025, UMD Association for Women in Computing</p>

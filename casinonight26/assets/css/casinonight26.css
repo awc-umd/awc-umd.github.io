@@ -203,6 +203,18 @@ This Casino Night used two specific fonts from Clue (1985)'s promotional materia
 html,
 body {
   background-color: var(--dark-background);
+  font-family: "DM Sans", serif;
+  color: #FFFFFF;
+}
+
+.landing-page {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  /*#af5b41*/
+  background-image: linear-gradient(#af5b416d, #78090b77), url("/casinonight26/assets/images/background-photos/clue-actors.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .accent {
@@ -222,22 +234,67 @@ body {
   font-family: 'Anonymous Pro', monospace;
 }
 
-.line-1 {
-  position: relative;
-  top: 50%;
-  width: 24em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, .75);
-  font-size: small;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
+h1 {
+  font-size: 60px;
 }
 
-.anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
+h2 {
+  font-size: 25px;
+  font-family: Novel Gothic, serif;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: ITC Kabel Book, serif;
+}
+
+.btn-landing {
+  width: 80%;
+  max-width: 250px;  /* keeps it nice on mobile */
+  min-width: 0;      /* overrides your 250px on small screens */
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  border-color: var(--dark-secondary);
+  font-family: ITC Kabel Bold, serif;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.btn-rsvp {
+  border-radius: 999px;
+  border-color: #7A181A;
+  color: #FFFFFF;
+  font-family: ITC Kabel Bold, serif;
+  padding: 0.5rem 3rem;
+}
+
+.shadow-effect1 {
+  text-shadow: 8px 8px 0px var(--dark-primary);
+}
+
+.shadow-effect2 {
+  text-shadow: 3px 3px 0px #474747;
+}
+
+.img-poster {
+  height: 350px;
+  border-radius: 15px;
+}
+
+.casino-subnav {
+  background-color: var(--dark-primary);
+  line-height: 0.8;
+}
+
+.casino-subnav .nav-link {
+  color: var(--dark-text);
+  padding: 0.75rem 0;
+  font-size: 20px;
+  font-family: "ITC Kabel Bold", serif;
+}
+
+.scroll-anchor {
+  scroll-margin-top: 5vh;
 }
 
 @keyframes typewriter {
@@ -442,7 +499,28 @@ both buttons, and the background image */
 
 /* DESKTOP CHANGES */
 @media (min-width: 992px) {
+  h1 {
+    font-size: 100px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    font-family: Novel Gothic, serif;
+  }
+  
+  h3 {
+    font-family: ITC Kabel Book, serif;
+  }
 
+  .btn-landing {
+    min-width: 250px;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    font-family: ITC Kabel Bold, serif;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+  
   .casino-title {
     text-align: right;
     font-size: 50px;
