@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const folder = 'assets/images/gallery-2025/';
-    const count = 20; // how many pages you exported
+    const count = 19; // how many pages you exported
     const ul = document.getElementById('event-slides');
     for (let i = 1; i <= count; i++) {
         const li = document.createElement('li');
