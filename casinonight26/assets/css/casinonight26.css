@@ -331,6 +331,14 @@ both buttons, and the background image */
 
 /* need to declare classes for mini navbar */
 
+a {
+  color: var(--background);
+}
+
+a:hover {
+  color: var(--background);
+}
+
 
 /* ABOUT SECTION ~ no immediate changes*/
 .about {
