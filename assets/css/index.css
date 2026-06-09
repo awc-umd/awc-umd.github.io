@@ -11,7 +11,7 @@ html {
   width: 100%;
   aspect-ratio: 16 / 9;
 
-  background-image: linear-gradient(rgba(239, 168, 176, 0.5), rgba(239, 168, 176, 0.5)), url("/assets/images/index_header.jpg");
+  background-image: linear-gradient(rgba(239, 168, 176, 0.5), rgba(239, 168, 176, 0.5)), url("/assets/images/Landing_Page.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

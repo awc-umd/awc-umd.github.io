@@ -30,6 +30,10 @@
 
   <!-- Custom JS-->
   <script src="assets/js/site.js" defer></script>
+
+  <!-- In your <head> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </head>
 
 <body>
@@ -49,7 +53,7 @@
               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
               <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-              <li class="nav-item"><a class="nav-link" href="casinonight26/casinonight26.html">Casino Night</a></li>
+              <li class="nav-item"><a class="nav-link" href="casino_night.html">Casino Night</a></li>
             </ul>
             <ul class="navbar-nav ms-auto align-items-center gap-2">
               <li class="nav-item dropdown">
@@ -122,853 +126,978 @@
   <div class="container text-center mb-5">
     <div class="row align-items-center exec-board">
       <div class="col">
-        <h2>Meet the <span class="text-pink">2025-2026 <i>Executive Board</i></span></h2>
+        <h2>Meet the <span class="text-pink">2026-2027 <i>Executive Board</i></span></h2>
         <br>
       </div>
     </div>
 
+    <div id="execCarousel" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+
+          <!-- Co Pres 1 -->
+          <li class="splide__slide">
+            <div class="col exec">
+              <div class="img-hover-container position-relative d-inline-block">
+                <img src="assets/board_pics/avanti.jpeg" alt="Avanti Athavale Photo">
+                <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal"
+                  data-bs-target="#bioCoPres1">
+                  View Bio
+                </button>
+              </div>
+              <h2 class="name">Avanti Athavale</h2>
+              <h3 class="position">Co-President | Senior</h3>
+              <h4>Computer Science Major | Finance Major</h4>
+            </div>
+          </li>
+
+          <!-- Co Pres 1 -->
+          <li class="splide__slide">
+            <div class="col exec">
+              <div class="img-hover-container position-relative d-inline-block">
+                <img src="assets/board_pics/alma.jpeg" alt="Alma Hagstrom Photo">
+                <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal"
+                  data-bs-target="#bioCoPres2">
+                  View Bio
+                </button>
+              </div>
+              <h2 class="name">Alma Hagstrom</h2>
+              <h3 class="position">Co-President | Senior</h3>
+              <h4>Computer Science Major | Finance Major</h4>
+            </div>
+          </li>
+
+          <!-- Co Active Member 1 -->
+          <li class="splide__slide">
+            <div class="col exec">
+              <div class="img-hover-container position-relative d-inline-block">
+                <img src="assets/board_pics/nithika.jpeg" alt="Nithika Ramanathan Photo">
+                <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal"
+                  data-bs-target="#bioCo-Active1">
+                  View Bio
+                </button>
+              </div>
+              <h2 class="name">Nithika Ramanathan</h2>
+              <h3 class="position">Co-Active Members Director | Senior</h3>
+              <h4>Computer Science Major | Statistics Minor</h4>
+            </div>
+          </li>
+
+          <!-- Co Active Member 2 -->
+          <li class="splide__slide">
+            <div class="col exec">
+              <div class="img-hover-container position-relative d-inline-block">
+                <img src="assets/images/awclogo_transparent.png" alt="Sitara Chakkamadathil Photo">
+                <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal"
+                  data-bs-target="#bioCo-Active2">
+                  View Bio
+                </button>
+              </div>
+              <h2 class="name">Sitara Chakkamadathil</h2>
+              <h3 class="position">Co-Active Members Director | Sophomore</h3>
+              <h4>Computer Science Major | *</h4>
+            </div>
+          </li>
+
+          <!-- Co Spons 1 -->
+          <li class="splide__slide">
+            <div class="col exec">
+              <div class="img-hover-container position-relative d-inline-block">
+                <img src="assets/images/awclogo_transparent.png" alt="Sarah Fitz Photo">
+                <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal"
+                  data-bs-target="#bioCoSpons1">
+                  View Bio
+                </button>
+              </div>
+              <h2 class="name">Sarah Fitz</h2>
+              <h3 class="position">Co-Sponsorship Director | Sophomore</h3>
+              <h4>Computer Science Major | *</h4>
+            </div>
+          </li>
+
+          <!-- Co Spons 2 -->
+          <li class="splide__slide">
+            <div class="col exec">
+              <div class="img-hover-container position-relative d-inline-block">
+                <img src="assets/images/awclogo_transparent.png" alt="Saanvi Veera Bomma Photo">
+                <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal"
+                  data-bs-target="#bioCoSpons2">
+                  View Bio
+                </button>
+              </div>
+              <h2 class="name">Saanvi Veera Bomma</h2>
+              <h3 class="position">Co-Sponsorship Director | *</h3>
+              <h4>Computer Science Major | *</h4>
+            </div>
+          </li>
+
+          <!-- Co Design 1 -->
+          <li class="splide__slide">
+            <div class="col exec">
+              <div class="img-hover-container position-relative d-inline-block">
+                <img src="assets/board_pics/zoya.jpeg" alt="Zoya Rahman Photo">
+                <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal"
+                  data-bs-target="#bioDesign">
+                  View Bio
+                </button>
+              </div>
+              <h2 class="name">Zoya Rahman</h2>
+              <h3 class="position">Co-Design Director | Senior</h3>
+              <h4>Computer Science Major | Immersive Media Design Major</h4>
+            </div>
+          </li>
+
+          <!-- Co Design 2 -->
+          <li class="splide__slide">
+            <div class="col exec">
+              <div class="img-hover-container position-relative d-inline-block">
+                <img src="assets/images/awclogo_transparent.png" alt="Disha Ramesh Photo">
+                <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal"
+                  data-bs-target="#bioDesign2">
+                  View Bio
+                </button>
+              </div>
+              <h2 class="name">Disha Ramesh</h2>
+              <h3 class="position">Co-Design Director | Junior</h3>
+              <h4>Computer Science Major | Immersive Media Design Major</h4>
+            </div>
+          </li>
+
+          <!-- Social media -->
+          <li class="splide__slide">
+            <div class="col exec">
+              <div class="img-hover-container position-relative d-inline-block">
+                <img src="assets/board_pics/laasya.jpeg" alt="Laasya Madduri Photo">
+                <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal"
+                  data-bs-target="#bioSocialMedia">
+                  View Bio
+                </button>
+              </div>
+              <h2 class="name">Laasya Madduri</h2>
+              <h3 class="position">Social Media Director | Senior</h3>
+              <h4>Computer Science Major</h4>
+            </div>
+          </li>
+
+          <!-- Administrative -->
+          <li class="splide__slide">
+            <div class="col exec">
+              <div class="img-hover-container position-relative d-inline-block">
+                <img src="assets/board_pics/shriya.jpeg" alt="Shriya Rao Photo">
+                <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal" data-bs-target="#bioAdmin">
+                  View Bio
+                </button>
+              </div>
+              <h2 class="name">Shriya Rao</h2>
+              <h3 class="position">Administrative Director | Sophmore</h3>
+              <h4>Computer Science Major | Business Minor</h4>
+            </div>
+          </li>
+
+          <!-- Finance -->
+          <li class="splide__slide">
+            <div class="col exec">
+              <div class="img-hover-container position-relative d-inline-block">
+                <img src="assets/board_pics/aabha.jpeg" alt="Aabha Belsare Photo">
+                <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal"
+                  data-bs-target="#bioFinance">
+                  View Bio
+                </button>
+              </div>
+              <h2 class="name">Aabha Belsare</h2>
+              <h3 class="position">Finance Director | Junior</h3>
+              <h4>Computer Science Major | Finance Major</h4>
+            </div>
+          </li>
+
+          <!-- Education -->
+          <li class="splide__slide">
+            <div class="col exec">
+              <div class="img-hover-container position-relative d-inline-block">
+                <img src="assets/board_pics/koena.jpg" alt="Koena Jaware Photo">
+                <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal" data-bs-target="#bioEdu">
+                  View Bio
+                </button>
+              </div>
+              <h2 class="name">Koena Jaware</h2>
+              <h3 class="position">Education Director | Senior</h3>
+              <h4>Computer Science Major | Business Major</h4>
+            </div>
+          </li>
+
+          <!-- Social Events -->
+          <li class="splide__slide">
+            <div class="col exec">
+              <div class="img-hover-container position-relative d-inline-block">
+                <img src="assets/images/awclogo_transparent.png" alt="Anannya Trehan Photo">
+                <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal"
+                  data-bs-target="#bioEvents">
+                  View Bio
+                </button>
+              </div>
+              <h2 class="name">Anannya Trehan</h2>
+              <h3 class="position">Social Events Director | *</h3>
+              <h4>Computer Science Major | *</h4>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modal Bios-->
     <div class="container">
-      <div class="row exec-row">
+      <!-- Co-Pres 1 -->
+      <div class="modal fade" id="bioCoPres1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Header -->
+            <div class="modal-header flex-column border-0">
+              <h4 class="modal-title text-center mb-2">
+                Avanti Athavale
+              </h4>
 
-        <!-- Sriya -->
-        <div class="col exec">
-          <div class="img-hover-container position-relative d-inline-block">
-            <img src="assets/photos25/board_pics/sriya.jpeg" alt="Sriya Sogal Photo">
-            <button type="button" class="btn hover-btn" data-bs-toggle="modal" data-bs-target="#bioSriya">
-              View Bio
-            </button>
-          </div>
-          <div class="modal fade" id="bioSriya" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header flex-column border-0">
-                  <h4 class="modal-title text-center mb-2">
-                    Sriya Sogal
-                  </h4>
+              <!-- Role Section -->
+              <div class="text-center">
+                <!-- Role Title -->
+                <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
+                  data-bs-toggle="collapse" href="#roleDescCoPres1" role="button" aria-expanded="false"
+                  aria-controls="roleDescCoPres1">
+                  Co-President
+                  <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
+                </h5>
 
-                  <!-- Role Section -->
-                  <div class="text-center">
-                    <!-- Role Title -->
-                    <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
-                      data-bs-toggle="collapse" href="#roleDescSriya" role="button" aria-expanded="false"
-                      aria-controls="roleDescSriya">
-                      Co-President
-                      <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
-                    </h5>
-
-                    <!-- Role Description -->
-                    <div class="collapse" id="roleDescSriya">
-                      <p class="role-text text-muted small mb-0 mt-2">
-                        Lead AWC’s vision and collaborate with the entire exec board to ensure smooth operations.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Body -->
-                <div class="modal-body rounded-lg p-4 ">
-                  <div>
-                    <h6 class="about-title text-center mb-2">About Me</h6>
-                    <p class="about-text lh-lg">
-                      I joined <span class="text-pink fw-bold">AWC</span> to meet like-minded people in CS after
-                      realizing the importance of having a supportive community in such a competitive field. In my free
-                      time, I enjoy reading, watching TV, and playing tennis.
-                    </p>
-                  </div>
-
-                  <div class="text-center mt-3">
-                    <a href="https://www.linkedin.com/in/sriya-sogal/" target="_blank" rel="noopener noreferrer">
-                      <i class="bi bi-linkedin fs-3 text-pink"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <!-- Role Description -->
+                <div class="collapse" id="roleDescCoPres1">
+                  <p class="role-text text-muted small mb-0 mt-2">
+                    Role Description Coming Soon ...
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <h2 class="name">Sriya Sogal</h2>
-          <h3 class="position">Co-President | Senior</h3>
-          <h4>Computer Science Major | Public Policy Major</h4>
-        </div>
 
-        <!-- Sathvika -->
-        <div class="col exec">
-          <div class="img-hover-container position-relative d-inline-block">
-            <img src="assets/photos25/board_pics/sathvika.jpeg" alt="Sathvika Sangoju Photo">
-            <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal" data-bs-target="#bioSathvika">
-              View Bio
-            </button>
-          </div>
-          <div class="modal fade" id="bioSathvika" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header flex-column border-0">
-                  <h4 class="modal-title text-center mb-2">
-                    Sathvika Sangoju
-                  </h4>
+            <!-- Body -->
+            <div class="modal-body rounded-lg p-4 ">
+              <div>
+                <h6 class="about-title text-center mb-2">About Me</h6>
+                <p class="about-text lh-lg">
+                  "I joined <span class="fw-bold text-pink">AWC</span> because I wanted to find a community of women
+                  in computing, and I later chose to apply for the executive board since I wanted to be a part of
+                  the team shaping the community I loved freshman year.
+                  Currently, I serve as a co-director of sponsorship, but last year I served as the director of
+                  social events.
+                  Outside of school, I enjoy reading, writing, baking, and hiking."
+                </p>
+              </div>
 
-                  <!-- Role Section -->
-                  <div class="text-center">
-                    <!-- Role Title -->
-                    <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
-                      data-bs-toggle="collapse" href="#roleDescSathvika" role="button" aria-expanded="false"
-                      aria-controls="roleDescSathvika">
-                      Co-President
-                      <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
-                    </h5>
-
-                    <!-- Role Description -->
-                    <div class="collapse" id="roleDescSathvika">
-                      <p class="role-text text-muted small mb-0 mt-2">
-                        As Co-President, my goal is to listen to what our members have to say and help bring their ideas
-                        to life with the board. I’m here to make sure everyone feels heard and that we’re building
-                        something fun and meaningful together!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Body -->
-                <div class="modal-body rounded-lg p-4 ">
-                  <div>
-                    <h6 class="about-title text-center mb-2">About Me</h6>
-                    <p class="about-text lh-lg">
-                      I joined <span class="fw-bold text-pink">AWC</span> to find a supportive community of like-minded
-                      individuals, and it has given me
-                      awesome opportunity of getting to grow, learn, and be inspired together! Asides from academics, I
-                      love photography, making art, going on hikes, and checking out new coffee shops!
-                    </p>
-                  </div>
-
-                  <div class="text-center mt-3">
-                    <a href="https://www.linkedin.com/in/sathvika-sangoju/" target="_blank" rel="noopener noreferrer">
-                      <i class="bi bi-linkedin fs-3 text-pink"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                </div>
+              <div class="text-center mt-3">
+                <a href="https://www.linkedin.com/in/avanti-athavale-04b002292/" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-linkedin fs-3 text-pink"></i>
+                </a>
               </div>
             </div>
-          </div>
-          <h2 class="name">Sathvika Sangoju</h2>
-          <h3 class="position">Co-President | Senior</h3>
-          <h4>Computer Science Major | General Business, Data Science</h4>
-        </div>
 
-        <!-- Manasi -->
-        <div class="col exec">
-          <div class="img-hover-container position-relative d-inline-block">
-            <img src="assets/photos25/board_pics/manasi.jpg" alt="Manasi Dixit Photo">
-            <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal" data-bs-target="#bioManasi">
-              View Bio
-            </button>
-          </div>
-          <div class="modal fade" id="bioManasi" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header flex-column border-0">
-                  <h4 class="modal-title text-center mb-2">
-                    Manasi Dixit
-                  </h4>
-
-                  <!-- Role Section -->
-                  <div class="text-center">
-                    <!-- Role Title -->
-                    <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
-                      data-bs-toggle="collapse" href="#roleDescManasi" role="button" aria-expanded="false"
-                      aria-controls="roleDescManasi">
-                      Co-Active Members Director
-                      <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
-                    </h5>
-
-                    <!-- Role Description -->
-                    <div class="collapse" id="roleDescManasi">
-                      <p class="role-text text-muted small mb-0 mt-2">
-                        Organizes the Big/Little program, leads committees for AWC’s annual Casino Night, and drives
-                        active member engagement by developing retention incentives.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Body -->
-                <div class="modal-body rounded-lg p-4 ">
-                  <div>
-                    <h6 class="about-title text-center mb-2">About Me</h6>
-                    <p class="about-text lh-lg">
-                      "I joined <span class="fw-bold text-pink">AWC</span> to get involved with the computing community
-                      at UMD. Being a Big in the Big/Little program was a fun, rewarding way to support other women in
-                      tech, and I’m so excited to keep growing the program and plan events for active members as
-                      Co-Director! Outside of school, I love traveling, reading, and cooking!"
-                    </p>
-                  </div>
-
-                  <div class="text-center mt-3">
-                    <a href="https://www.linkedin.com/in/manasi-dixit-789bb822b/" target="_blank"
-                      rel="noopener noreferrer">
-                      <i class="bi bi-linkedin fs-3 text-pink"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
+            <!-- Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
-          <h2 class="name">Manasi Dixit</h2>
-          <h3 class="position">Co-Active Members Director | Senior</h3>
-          <h4>Computer Science Major | Linguistics Major</h4>
-        </div>
-
-        <!-- Shriya -->
-        <div class="col exec">
-          <div class="img-hover-container position-relative d-inline-block">
-            <img src="assets/photos25/board_pics/shriya.jpeg" alt="Shriya Rao Photo">
-            <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal" data-bs-target="#bioShriya">
-              View Bio
-            </button>
-          </div>
-          <div class="modal fade" id="bioShriya" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header flex-column border-0">
-                  <h4 class="modal-title text-center mb-2">
-                    Shriya Rao
-                  </h4>
-
-                  <!-- Role Section -->
-                  <div class="text-center">
-                    <!-- Role Title -->
-                    <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
-                      data-bs-toggle="collapse" href="#roleDescShriya" role="button" aria-expanded="false"
-                      aria-controls="roleDescShriya">
-                      Co-Active Members Director
-                      <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
-                    </h5>
-
-                    <!-- Role Description -->
-                    <div class="collapse" id="roleDescShriya">
-                      <p class="role-text text-muted small mb-0 mt-2">
-                        Organizes the Big/Little program, leads committees for AWC’s annual Casino Night, and drives
-                        active member engagement by developing retention incentives
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Body -->
-                <div class="modal-body rounded-lg p-4 ">
-                  <div>
-                    <h6 class="about-title text-center mb-2">About Me</h6>
-                    <p class="about-text lh-lg">
-                      "I joined <span class="fw-bold text-pink">AWC</span> because I wanted to be part of a supportive
-                      community of women in tech at UMD and explore the tech space alongside others who share similar
-                      interests.
-
-                      I applied for the Co-Director of Active Members position because I genuinely valued the
-                      connections I built and everything I learned through the Big/Little program, and I want to help
-                      create that same meaningful experience for other members.
-
-                      Outside of school, my hobbies include traveling, reading, watching movies, and photography!
-                      "
-                    </p>
-                  </div>
-
-                  <div class="text-center mt-3">
-                    <a href="https://www.linkedin.com/in/shriya-rao-13sr/" target="_blank" rel="noopener noreferrer">
-                      <i class="bi bi-linkedin fs-3 text-pink"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h2 class="name">Shriya Rao</h2>
-          <h3 class="position">Co-Active Members Director | Freshman</h3>
-          <h4>Computer Science Major | Business Minor</h4>
-        </div>
-
-        <!-- Zoya -->
-        <div class="col exec">
-          <div class="img-hover-container position-relative d-inline-block">
-            <img src="assets/photos25/board_pics/zoya.jpeg" alt="Zoya Rahman Photo">
-            <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal" data-bs-target="#bioZoya">
-              View Bio
-            </button>
-          </div>
-          <div class="modal fade" id="bioZoya" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header flex-column border-0">
-                  <h4 class="modal-title text-center mb-2">
-                    Zoya Rahman
-                  </h4>
-
-                  <!-- Role Section -->
-                  <div class="text-center">
-                    <!-- Role Title -->
-                    <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
-                      data-bs-toggle="collapse" href="#roleDescZoya" role="button" aria-expanded="false"
-                      aria-controls="roleDescZoya">
-                      Design Director
-                      <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
-                    </h5>
-
-                    <!-- Role Description -->
-                    <div class="collapse" id="roleDescZoya">
-                      <p class="role-text text-muted small mb-0 mt-2">
-                        In charge of establishing AWC's visual identity through brand design, including our social media
-                        graphics, public advertisement, and website UI/UX.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Body -->
-                <div class="modal-body rounded-lg p-4 ">
-                  <div>
-                    <h6 class="about-title text-center mb-2">About Me</h6>
-                    <p class="about-text lh-lg">
-                      "I joined <span class="fw-bold text-pink">AWC</span> my freshman year because I started Computer
-                      Science late into college, and I wanted to find
-                      a community of other women in tech with similar goals and interests as mine! I applied for Design
-                      specifically because I love to create and am also pursuing a design related degree.
-                      Some hobbies I have outside of tech include journaling, crocheting, drawing, baking, gaming, and
-                      watching cartoons :D"
-                    </p>
-                  </div>
-
-                  <div class="text-center mt-3">
-                    <a href="https://www.linkedin.com/in/zoya-rahman-5315a12a3/" target="_blank"
-                      rel="noopener noreferrer">
-                      <i class="bi bi-linkedin fs-3 text-pink"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h2 class="name">Zoya Rahman</h2>
-          <h3 class="position">Design Director | Junior</h3>
-          <h4>Computer Science Major | Immersive Media Design Major</h4>
-        </div>
-
-        <!-- Aabha -->
-        <div class="col exec">
-          <div class="img-hover-container position-relative d-inline-block">
-            <img src="assets/photos25/board_pics/aabha.jpeg" alt="Aabha Belsare Photo">
-            <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal" data-bs-target="#bioAabha">
-              View Bio
-            </button>
-          </div>
-          <div class="modal fade" id="bioAabha" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header flex-column border-0">
-                  <h4 class="modal-title text-center mb-2">
-                    Aabha Belsare
-                  </h4>
-
-                  <!-- Role Section -->
-                  <div class="text-center">
-                    <!-- Role Title -->
-                    <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
-                      data-bs-toggle="collapse" href="#roleDescAabha" role="button" aria-expanded="false"
-                      aria-controls="roleDescAabha">
-                      Finance Director
-                      <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
-                    </h5>
-
-                    <!-- Role Description -->
-                    <div class="collapse" id="roleDescAabha">
-                      <p class="role-text text-muted small mb-0 mt-2">
-                        In charge of managing AWC’s annual budget and allocating funds effectively, including
-                        maintaining accurate financial records, including expenditures and invoices.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Body -->
-                <div class="modal-body rounded-lg p-4 ">
-                  <div>
-                    <h6 class="about-title text-center mb-2">About Me</h6>
-                    <p class="about-text lh-lg">
-                      "I joined <span class="fw-bold text-pink">AWC</span> to gain confidence in computer science while
-                      finding a supportive community of people with similar interests and backgrounds. I wanted to do
-                      Finance because I wanted hands-on experience managing a budget and learning skills outside of
-                      tech.
-                      Outside of school, I enjoy hiking, baking, building with Legos, and watching movies and shows!"
-                    </p>
-                  </div>
-
-                  <div class="text-center mt-3">
-                    <a href="https://www.linkedin.com/in/aabha-belsare/" target="_blank" rel="noopener noreferrer">
-                      <i class="bi bi-linkedin fs-3 text-pink"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h2 class="name">Aabha Belsare</h2>
-          <h3 class="position">Finance Director | Sophomore</h3>
-          <h4>Computer Science Major | Finance Major</h4>
-        </div>
-
-        <!-- Avanti -->
-        <div class="col exec">
-          <div class="img-hover-container position-relative d-inline-block">
-            <img src="assets/photos25/board_pics/avanti.jpeg" alt="Avanti Athavale Photo">
-            <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal" data-bs-target="#bioAvanti">
-              View Bio
-            </button>
-          </div>
-          <div class="modal fade" id="bioAvanti" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header flex-column border-0">
-                  <h4 class="modal-title text-center mb-2">
-                    Avanti Athavale
-                  </h4>
-
-                  <!-- Role Section -->
-                  <div class="text-center">
-                    <!-- Role Title -->
-                    <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
-                      data-bs-toggle="collapse" href="#roleDescAvanti" role="button" aria-expanded="false"
-                      aria-controls="roleDescAvanti">
-                      Co-Sponsorship Director
-                      <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
-                    </h5>
-
-                    <!-- Role Description -->
-                    <div class="collapse" id="roleDescAvanti">
-                      <p class="role-text text-muted small mb-0 mt-2">
-                        Collaboratively serve as the main points of contact with sponsors, performing outreach and
-                        communicating with company representatives to secure partnerships and plan corporate events for
-                        AWC.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Body -->
-                <div class="modal-body rounded-lg p-4 ">
-                  <div>
-                    <h6 class="about-title text-center mb-2">About Me</h6>
-                    <p class="about-text lh-lg">
-                      "I joined <span class="fw-bold text-pink">AWC</span> because I wanted to find a community of women
-                      in computing, and I later chose to apply for the executive board since I wanted to be a part of
-                      the team shaping the community I loved freshman year.
-                      Currently, I serve as a co-director of sponsorship, but last year I served as the director of
-                      social events.
-                      Outside of school, I enjoy reading, writing, baking, and hiking."
-                    </p>
-                  </div>
-
-                  <div class="text-center mt-3">
-                    <a href="https://www.linkedin.com/in/avanti-athavale-04b002292/" target="_blank"
-                      rel="noopener noreferrer">
-                      <i class="bi bi-linkedin fs-3 text-pink"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h2 class="name">Avanti Athavale</h2>
-          <h3 class="position">Co-Sponsorship Director | Junior</h3>
-          <h4>Computer Science Major | Finance Major</h4>
-        </div>
-
-        <!-- Laasya -->
-        <div class="col exec">
-          <div class="img-hover-container position-relative d-inline-block">
-            <img src="assets/photos25/board_pics/laasya.jpeg" alt="Laasya Madduri Photo">
-            <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal" data-bs-target="#bioLaasya">
-              View Bio
-            </button>
-          </div>
-          <div class="modal fade" id="bioLaasya" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header flex-column border-0">
-                  <h4 class="modal-title text-center mb-2">
-                    Laasya Madduri
-                  </h4>
-
-                  <!-- Role Section -->
-                  <div class="text-center">
-                    <!-- Role Title -->
-                    <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
-                      data-bs-toggle="collapse" href="#roleDescLaasya" role="button" aria-expanded="false"
-                      aria-controls="roleDescLaasya">
-                      Co-Sponsorship Director
-                      <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
-                    </h5>
-
-                    <!-- Role Description -->
-                    <div class="collapse" id="roleDescLaasya">
-                      <p class="role-text text-muted small mb-0 mt-2">
-                        Collaboratively serve as the main points of contact with sponsors, performing outreach and
-                        communicating with company representatives to secure partnerships and plan corporate events for
-                        AWC.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Body -->
-                <div class="modal-body rounded-lg p-4 ">
-                  <div>
-                    <h6 class="about-title text-center mb-2">About Me</h6>
-                    <p class="about-text lh-lg">
-                      "I joined <span class="fw-bold text-pink">AWC</span> because I wanted to find a community of
-                      ambitious people who share the same experiences as women in tech.
-                      My freshman year was full of me trying to gain my footing, and AWC provided a lot of opportunities
-                      for my social and professional growth!
-                      Outside of tech, I enjoy making art, puzzles, going to museums, thrifting, cooking, and reading!"
-                    </p>
-                  </div>
-
-                  <div class="text-center mt-3">
-                    <a href="https://www.linkedin.com/in/laasya-madduri" target="_blank" rel="noopener noreferrer">
-                      <i class="bi bi-linkedin fs-3 text-pink"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h2 class="name">Laasya Madduri</h2>
-          <h3 class="position">Co-Sponsorship Director | Junior</h3>
-          <h4>Computer Science Major</h4>
-        </div>
-
-        <!-- Purva -->
-        <div class="col exec">
-          <div class="img-hover-container position-relative d-inline-block">
-            <img src="assets/photos25/board_pics/purva.jpeg" alt="Purva Chimurkar Photo">
-            <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal" data-bs-target="#bioPurva">
-              View Bio
-            </button>
-          </div>
-          <div class="modal fade" id="bioPurva" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header flex-column border-0">
-                  <h4 class="modal-title text-center mb-2">
-                    Purva Chimurkar
-                  </h4>
-
-                  <!-- Role Section -->
-                  <div class="text-center">
-                    <!-- Role Title -->
-                    <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
-                      data-bs-toggle="collapse" href="#roleDescPurva" role="button" aria-expanded="false"
-                      aria-controls="roleDescPurva">
-                      Social Media Director
-                      <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
-                    </h5>
-
-                    <!-- Role Description -->
-                    <div class="collapse" id="roleDescPurva">
-                      <p class="role-text text-muted small mb-0 mt-2">
-                        In charge of all social platforms to boost outreach and keep member retention of our
-                        organization.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Body -->
-                <div class="modal-body rounded-lg p-4 ">
-                  <div>
-                    <h6 class="about-title text-center mb-2">About Me</h6>
-                    <p class="about-text lh-lg">
-                      "I joined <span class="fw-bold text-pink">AWC</span> my freshman year because I wanted to meet
-                      more girls in CS and I saw a few posts on Instagram for their events.
-                      I’m so glad I joined because the community I’ve become a part of has been incredibly kind, and
-                      I’ve gained so many amazing skills and friendships!"
-                    </p>
-                  </div>
-
-                  <div class="text-center mt-3">
-                    <a href="https://www.linkedin.com/in/purva-chimurkar/" target="_blank" rel="noopener noreferrer">
-                      <i class="bi bi-linkedin fs-3 text-pink"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h2 class="name">Purva Chimurkar</h2>
-          <h3 class="position">Social Media Director | Senior</h3>
-          <h4>Computer Science Major | General Business Major</h4>
-        </div>
-
-        <!-- Alma -->
-        <div class="col exec">
-          <div class="img-hover-container position-relative d-inline-block">
-            <img src="assets/photos25/board_pics/alma.jpeg" alt="Alma Hagstrom Photo">
-            <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal" data-bs-target="#bioAlma">
-              View Bio
-            </button>
-          </div>
-          <div class="modal fade" id="bioAlma" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header flex-column border-0">
-                  <h4 class="modal-title text-center mb-2">
-                    Alma Hagstrom
-                  </h4>
-
-                  <!-- Role Section -->
-                  <div class="text-center">
-                    <!-- Role Title -->
-                    <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
-                      data-bs-toggle="collapse" href="#roleDescAlma" role="button" aria-expanded="false"
-                      aria-controls="roleDescAlma">
-                      Education Director
-                      <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
-                    </h5>
-
-                    <!-- Role Description -->
-                    <div class="collapse" id="roleDescAlma">
-                      <p class="role-text text-muted small mb-0 mt-2">
-                        Design and lead engaging educational programs for the AWC community, fostering learning, skill
-                        development, and professional growth. Collaborate with alumni to participate in select events,
-                        strengthening the network between current members and graduates.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Body -->
-                <div class="modal-body rounded-lg p-4 ">
-                  <div>
-                    <h6 class="about-title text-center mb-2">About Me</h6>
-                    <p class="about-text lh-lg">
-                      I joined <span class="fw-bold text-pink">AWC</span> because I wanted to participate in events to
-                      further my network and learning, as well as get to know more women in tech since most of my
-                      involvements are in the business school. I enjoy being education director because I am able to
-                      create events that drew me to AWC, as well as foster community through learning. Some hobbies I
-                      have outside of tech include running, lifting, cooking and spending time with friends and family!
-                    </p>
-                  </div>
-
-                  <div class="text-center mt-3">
-                    <a href="https://www.linkedin.com/in/alma-hagstrom/" target="_blank" rel="noopener noreferrer">
-                      <i class="bi bi-linkedin fs-3 text-pink"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h2 class="name">Alma Hagstrom</h2>
-          <h3 class="position">Education Director | Junior</h3>
-          <h4>Computer Science Major | Finance Major</h4>
-        </div>
-
-        <!-- Ciana -->
-        <div class="col exec">
-          <div class="img-hover-container position-relative d-inline-block">
-            <img src="assets/photos25/board_pics/ciana.jpeg" alt="Ciana Gomes Photo">
-            <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal" data-bs-target="#bioCiana">
-              View Bio
-            </button>
-          </div>
-          <div class="modal fade" id="bioCiana" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header flex-column border-0">
-                  <h4 class="modal-title text-center mb-2">
-                    Ciana Gomes
-                  </h4>
-
-                  <!-- Role Section -->
-                  <div class="text-center">
-                    <!-- Role Title -->
-                    <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
-                      data-bs-toggle="collapse" href="#roleDescCiana" role="button" aria-expanded="false"
-                      aria-controls="roleDescCiana">
-                      Social Events Director
-                      <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
-                    </h5>
-
-                    <!-- Role Description -->
-                    <div class="collapse" id="roleDescCiana">
-                      <p class="role-text text-muted small mb-0 mt-2">
-                        Role Description coming soon...
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Body -->
-                <div class="modal-body rounded-lg p-4 ">
-                  <div>
-                    <h6 class="about-title text-center mb-2">About Me</h6>
-                    <p class="about-text lh-lg">
-                      About Me coming soon...
-                    </p>
-                  </div>
-
-                  <div class="text-center mt-3">
-                    <a href="www.linkedin.com/in/USERNAME" target="_blank" rel="noopener noreferrer">
-                      <i class="bi bi-linkedin fs-3 text-pink"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h2 class="name">Ciana Gomes</h2>
-          <h3 class="position">Social Events Director | Senior</h3>
-          <h4>Computer Science Major | Data Science Minor</h4>
-        </div>
-
-        <!-- Koena -->
-        <div class="col exec">
-          <div class="img-hover-container position-relative d-inline-block">
-            <img src="assets/photos25/board_pics/koena.jpg" alt="Koena Jaware Photo">
-            <button type="button" class="btn btn-light hover-btn" data-bs-toggle="modal" data-bs-target="#bioKoena">
-              View Bio
-            </button>
-          </div>
-          <div class="modal fade" id="bioKoena" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header flex-column border-0">
-                  <h4 class="modal-title text-center mb-2">
-                    Koena Jaware
-                  </h4>
-
-                  <!-- Role Section -->
-                  <div class="text-center">
-                    <!-- Role Title -->
-                    <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
-                      data-bs-toggle="collapse" href="#roleDescKoena" role="button" aria-expanded="false"
-                      aria-controls="roleDescKoena">
-                      Administrative Director
-                      <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
-                    </h5>
-
-                    <!-- Role Description -->
-                    <div class="collapse" id="roleDescKoena">
-                      <p class="role-text text-muted small mb-0 mt-2">
-                        Supports with event planning and communication by coordinating logistics, RSVPs, and
-                        communication related to AWC events.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Body -->
-                <div class="modal-body rounded-lg p-4 ">
-                  <div>
-                    <h6 class="about-title text-center mb-2">About Me</h6>
-                    <p class="about-text lh-lg">
-                      I joined <span class="fw-bold text-pink">AWC</span> to be part of a community that genuinely
-                      supports and uplifts women in tech. Being in spaces where collaboration, mentorship, and
-                      encouragement are prioritized has been incredibly meaningful to me. AWC gives me the opportunity
-                      to grow as a student in tech while also contributing to a more inclusive and supportive
-                      environment on campus!
-                    </p>
-                  </div>
-
-                  <div class="text-center mt-3">
-                    <a href="https://www.linkedin.com/in/koena-jaware/" target="_blank" rel="noopener noreferrer">
-                      <i class="bi bi-linkedin fs-3 text-pink"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h2 class="name">Koena Jaware</h2>
-          <h3 class="position">Administrative Director | Junior</h3>
-          <h4>Computer Science Major | Business Minor</h4>
         </div>
       </div>
 
+      <!-- Co-Pres 2 -->
+      <div class="modal fade" id="bioCoPres2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Header -->
+            <div class="modal-header flex-column border-0">
+              <h4 class="modal-title text-center mb-2">
+                Alma Hagstrom
+              </h4>
+
+              <!-- Role Section -->
+              <div class="text-center">
+                <!-- Role Title -->
+                <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
+                  data-bs-toggle="collapse" href="#roleDescCoPres2" role="button" aria-expanded="false"
+                  aria-controls="roleDescCoPres2">
+                  Co-President
+                  <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
+                </h5>
+
+                <!-- Role Description -->
+                <div class="collapse" id="roleDescCoPres2">
+                  <p class="role-text text-muted small mb-0 mt-2">
+                    Role Description Coming Soon ...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body rounded-lg p-4 ">
+              <div>
+                <h6 class="about-title text-center mb-2">About Me</h6>
+                <p class="about-text lh-lg">
+                  "I joined <span class="fw-bold text-pink">AWC</span> because I wanted to participate in events to
+                  further my network and learning, as well as get to know more women in tech since most of my
+                  involvements are in the business school. I enjoy being education director because I am able to
+                  create events that drew me to AWC, as well as foster community through learning. Some hobbies I
+                  have outside of tech include running, lifting, cooking and spending time with friends and family!"
+                </p>
+              </div>
+
+              <div class="text-center mt-3">
+                <a href="https://www.linkedin.com/in/alma-hagstrom/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-linkedin fs-3 text-pink"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Co-Active Member 1 -->
+      <div class="modal fade" id="bioCo-Active1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Header -->
+            <div class="modal-header flex-column border-0">
+              <h4 class="modal-title text-center mb-2">
+                Nithika Ramanathan
+              </h4>
+
+              <!-- Role Section -->
+              <div class="text-center">
+                <!-- Role Title -->
+                <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
+                  data-bs-toggle="collapse" href="#roleDescCo-Active1" role="button" aria-expanded="false"
+                  aria-controls="roleDescCo-Active1">
+                  Co-Active Members Director
+                  <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
+                </h5>
+
+                <!-- Role Description -->
+                <div class="collapse" id="roleDescCo-Active1">
+                  <p class="role-text text-muted small mb-0 mt-2">
+                    Organizes the Big/Little program, leads committees for AWC’s annual Casino Night, and drives
+                    active member engagement by developing retention incentives.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body rounded-lg p-4 ">
+              <div>
+                <h6 class="about-title text-center mb-2">About Me</h6>
+                <p class="about-text lh-lg">
+                  "I joined <span class="fw-bold text-pink">AWC</span> to find a supportive community of women in
+                  tech who inspire and encourage each other to grow!
+                  Last year, I served on the exec board as Administrative Director, and this year I applied for
+                  Co-Director of Active Members because I wanted to give back to the welcoming community that
+                  supported me when I first joined AWC as a freshman.
+                  My goal is to help create that same sense of belonging for new members by organizing programs and
+                  events that bring people together. Outside of tech, I enjoy spending time outdoors and traveling!"
+                </p>
+              </div>
+
+              <div class="text-center mt-3">
+                <a href="https://www.linkedin.com/in/nithika-ramanathan/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-linkedin fs-3 text-pink"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Co-Active Member 2 -->
+      <div class="modal fade" id="bioCo-Active2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Header -->
+            <div class="modal-header flex-column border-0">
+              <h4 class="modal-title text-center mb-2">
+                Sitara Chakkamadathil
+              </h4>
+
+              <!-- Role Section -->
+              <div class="text-center">
+                <!-- Role Title -->
+                <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
+                  data-bs-toggle="collapse" href="#roleDescCo-Active2" role="button" aria-expanded="false"
+                  aria-controls="roleDescCo-Active2">
+                  Co-Active Members Director
+                  <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
+                </h5>
+
+                <!-- Role Description -->
+                <div class="collapse" id="roleDescCo-Active2">
+                  <p class="role-text text-muted small mb-0 mt-2">
+                    Role Description Coming Soon ...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body rounded-lg p-4 ">
+              <div>
+                <h6 class="about-title text-center mb-2">About Me</h6>
+                <p class="about-text lh-lg">
+                  About Me Coming Soon ...
+                </p>
+              </div>
+
+              <div class="text-center mt-3">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-linkedin fs-3 text-pink"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Co-Spons 1 -->
+      <div class="modal fade" id="bioCoSpons1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Header -->
+            <div class="modal-header flex-column border-0">
+              <h4 class="modal-title text-center mb-2">
+                Sarah Fitz
+              </h4>
+
+              <!-- Role Section -->
+              <div class="text-center">
+                <!-- Role Title -->
+                <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
+                  data-bs-toggle="collapse" href="#roleDescCoSpons1" role="button" aria-expanded="false"
+                  aria-controls="roleDescCoSpons1">
+                  Co-Sponsorship Director
+                  <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
+                </h5>
+
+                <!-- Role Description -->
+                <div class="collapse" id="roleDescCoSpons1">
+                  <p class="role-text text-muted small mb-0 mt-2">
+                    Role Description Coming Soon ...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body rounded-lg p-4 ">
+              <div>
+                <h6 class="about-title text-center mb-2">About Me</h6>
+                <p class="about-text lh-lg">
+                  About Me Coming Soon ...
+                </p>
+              </div>
+              <!-- DONT FORGET ABOUT UPDATING LINKEDIN-->
+              <div class="text-center mt-3">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-linkedin fs-3 text-pink"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Co-Spons 2 -->
+      <div class="modal fade" id="bioCoSpons2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Header -->
+            <div class="modal-header flex-column border-0">
+              <h4 class="modal-title text-center mb-2">
+                Saanvi Veera Bomma
+              </h4>
+
+              <!-- Role Section -->
+              <div class="text-center">
+                <!-- Role Title -->
+                <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
+                  data-bs-toggle="collapse" href="#roleDescCoSpons2" role="button" aria-expanded="false"
+                  aria-controls="roleDescCoSpons2">
+                  Co-Sponsorship Director
+                  <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
+                </h5>
+
+                <!-- Role Description -->
+                <div class="collapse" id="roleDescCoSpons2">
+                  <p class="role-text text-muted small mb-0 mt-2">
+                    Role Description Coming Soon ...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body rounded-lg p-4 ">
+              <div>
+                <h6 class="about-title text-center mb-2">About Me</h6>
+                <p class="about-text lh-lg">
+                  About Me Coming Soon ...
+                </p>
+              </div>
+
+              <div class="text-center mt-3">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-linkedin fs-3 text-pink"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Co-Design 1 -->
+      <div class="modal fade" id="bioDesign" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Header -->
+            <div class="modal-header flex-column border-0">
+              <h4 class="modal-title text-center mb-2">
+                Zoya Rahman
+              </h4>
+
+              <!-- Role Section -->
+              <div class="text-center">
+                <!-- Role Title -->
+                <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
+                  data-bs-toggle="collapse" href="#roleDescDesign" role="button" aria-expanded="false"
+                  aria-controls="roleDescDesign">
+                  Co-Design Director
+                  <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
+                </h5>
+
+                <!-- Role Description -->
+                <div class="collapse" id="roleDescDesign">
+                  <p class="role-text text-muted small mb-0 mt-2">
+                    In charge of establishing AWC's visual identity through brand design, including our social media
+                    graphics, public advertisement, and website UI/UX.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body rounded-lg p-4 ">
+              <div>
+                <h6 class="about-title text-center mb-2">About Me</h6>
+                <p class="about-text lh-lg">
+                  "I joined <span class="fw-bold text-pink">AWC</span> my freshman year because I started Computer
+                  Science later into college, and I wanted to find
+                  a community of other women in tech with similar goals and interests as mine! I applied for Design
+                  specifically because I love to create and am also pursuing a design related degree.
+                  Some hobbies I have outside of tech include journaling, crocheting, drawing, baking, gaming, and
+                  watching cartoons :D"
+                </p>
+              </div>
+
+              <div class="text-center mt-3">
+                <a href="https://www.linkedin.com/in/zoya-rahman-5315a12a3/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-linkedin fs-3 text-pink"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Co-Design 2 -->
+      <div class="modal fade" id="bioDesign2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Header -->
+            <div class="modal-header flex-column border-0">
+              <h4 class="modal-title text-center mb-2">
+                Disha Ramesh
+              </h4>
+
+              <!-- Role Section -->
+              <div class="text-center">
+                <!-- Role Title -->
+                <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
+                  data-bs-toggle="collapse" href="#roleDescDesign2" role="button" aria-expanded="false"
+                  aria-controls="roleDescDesign2">
+                  Co-Design Director
+                  <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
+                </h5>
+
+                <!-- Role Description -->
+                <div class="collapse" id="roleDescDesign2">
+                  <p class="role-text text-muted small mb-0 mt-2">
+                    Role Description Coming Soon ...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body rounded-lg p-4 ">
+              <div>
+                <h6 class="about-title text-center mb-2">About Me</h6>
+                <p class="about-text lh-lg">
+                  About Me Coming Soon...
+                </p>
+              </div>
+
+              <div class="text-center mt-3">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-linkedin fs-3 text-pink"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+        <div class="modal fade" id="bioSocialMedia" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <!-- Header -->
+              <div class="modal-header flex-column border-0">
+                <h4 class="modal-title text-center mb-2">
+                  Laasya Madduri
+                </h4>
+
+                <!-- Role Section -->
+                <div class="text-center">
+                  <!-- Role Title -->
+                  <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
+                    data-bs-toggle="collapse" href="#roleDescSocialMedia" role="button" aria-expanded="false"
+                    aria-controls="roleDescSocialMedia">
+                    Social Media Director
+                    <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
+                  </h5>
+
+                  <!-- Role Description -->
+                  <div class="collapse" id="roleDescSocialMedia">
+                    <p class="role-text text-muted small mb-0 mt-2">
+                      Role Description Coming Soon ...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Body -->
+              <div class="modal-body rounded-lg p-4 ">
+                <div>
+                  <h6 class="about-title text-center mb-2">About Me</h6>
+                  <p class="about-text lh-lg">
+                    "I joined <span class="fw-bold text-pink">AWC</span> because I wanted to find a community of
+                    ambitious people who share the same experiences as women in tech.
+                    My freshman year was full of me trying to gain my footing, and AWC provided a lot of opportunities
+                    for my social and professional growth!
+                    Outside of tech, I enjoy making art, puzzles, going to museums, thrifting, cooking, and reading!"
+                  </p>
+                </div>
+
+                <div class="text-center mt-3">
+                  <a href="https://www.linkedin.com/in/laasya-madduri" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-linkedin fs-3 text-pink"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Administrative -->
+        <div class="modal fade" id="bioAdmin" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <!-- Header -->
+              <div class="modal-header flex-column border-0">
+                <h4 class="modal-title text-center mb-2">
+                  Shriya Rao
+                </h4>
+
+                <!-- Role Section -->
+                <div class="text-center">
+                  <!-- Role Title -->
+                  <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
+                    data-bs-toggle="collapse" href="#roleDescAdmin" role="button" aria-expanded="false"
+                    aria-controls="roleDescAdmin">
+                    Administrative Director
+                    <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
+                  </h5>
+
+                  <!-- Role Description -->
+                  <div class="collapse" id="roleDescAdmin">
+                    <p class="role-text text-muted small mb-0 mt-2">
+                      Supports with event planning and communication by coordinating logistics, RSVPs, and
+                      communication related to AWC events.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Body -->
+              <div class="modal-body rounded-lg p-4 ">
+                <div>
+                  <h6 class="about-title text-center mb-2">About Me</h6>
+                  <p class="about-text lh-lg">
+                    "I joined <span class="fw-bold text-pink">AWC</span> because I wanted to be part of a supportive
+                    community of women in tech at UMD and explore the tech space alongside others who share similar
+                    interests.
+                    I applied for the Co-Director of Active Members position because I genuinely valued the
+                    connections I built and everything I learned through the Big/Little program, and I want to help
+                    create that same meaningful experience for other members.
+                    Outside of school, my hobbies include traveling, reading, watching movies, and photography!"
+                  </p>
+                </div>
+
+                <div class="text-center mt-3">
+                  <a href="https://www.linkedin.com/in/shriya-rao-13sr/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-linkedin fs-3 text-pink"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Finance -->
+        <div class="modal fade" id="bioFinance" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <!-- Header -->
+              <div class="modal-header flex-column border-0">
+                <h4 class="modal-title text-center mb-2">
+                  Aabha Belsare
+                </h4>
+
+                <!-- Role Section -->
+                <div class="text-center">
+                  <!-- Role Title -->
+                  <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
+                    data-bs-toggle="collapse" href="#roleDescFinance" role="button" aria-expanded="false"
+                    aria-controls="roleDescFinance">
+                    Finance Director
+                    <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
+                  </h5>
+
+                  <!-- Role Description -->
+                  <div class="collapse" id="roleDescFinance">
+                    <p class="role-text text-muted small mb-0 mt-2">
+                      In charge of managing AWC’s annual budget and allocating funds effectively, including
+                      maintaining accurate financial records, including expenditures and invoices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Body -->
+              <div class="modal-body rounded-lg p-4 ">
+                <div>
+                  <h6 class="about-title text-center mb-2">About Me</h6>
+                  <p class="about-text lh-lg">
+                    "I joined <span class="fw-bold text-pink">AWC</span> to gain confidence in computer science while
+                    finding a supportive community of people with similar interests and backgrounds. I wanted to do
+                    Finance because I wanted hands-on experience managing a budget and learning skills outside of
+                    tech.
+                    Outside of school, I enjoy hiking, baking, building with Legos, and watching movies and shows!"
+                  </p>
+                </div>
+
+                <div class="text-center mt-3">
+                  <a href="https://www.linkedin.com/in/aabha-belsare/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-linkedin fs-3 text-pink"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Education -->
+      <div class="modal fade" id="bioEdu" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Header -->
+            <div class="modal-header flex-column border-0">
+              <h4 class="modal-title text-center mb-2">
+                Koena Jaware
+              </h4>
+
+              <!-- Role Section -->
+              <div class="text-center">
+                <!-- Role Title -->
+                <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
+                  data-bs-toggle="collapse" href="#roleDescEdu" role="button" aria-expanded="false"
+                  aria-controls="roleDescEdu">
+                  Education Director
+                  <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
+                </h5>
+
+                <!-- Role Description -->
+                <div class="collapse" id="roleDescEdu">
+                  <p class="role-text text-muted small mb-0 mt-2">
+                    Role Description Coming Soon ...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body rounded-lg p-4 ">
+              <div>
+                <h6 class="about-title text-center mb-2">About Me</h6>
+                <p class="about-text lh-lg">
+                  "I joined <span class="fw-bold text-pink">AWC</span> to be part of a community that genuinely
+                  supports and uplifts women in tech. Being in spaces where collaboration, mentorship, and
+                  encouragement are prioritized has been incredibly meaningful to me. AWC gives me the opportunity
+                  to grow as a student in tech while also contributing to a more inclusive and supportive
+                  environment on campus!""
+                </p>
+              </div>
+
+              <div class="text-center mt-3">
+                <a href="https://www.linkedin.com/in/koena-jaware" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-linkedin fs-3 text-pink"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Events -->
+      <div class="modal fade" id="bioEvents" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Header -->
+            <div class="modal-header flex-column border-0">
+              <h4 class="modal-title text-center mb-2">
+                Anannya Trehan
+              </h4>
+
+              <!-- Role Section -->
+              <div class="text-center">
+                <!-- Role Title -->
+                <h5 class="fw-bold mb-1 d-inline-flex align-items-center" style="color: #ff4da6; cursor: pointer;"
+                  data-bs-toggle="collapse" href="#roleDescEvents" role="button" aria-expanded="false"
+                  aria-controls="roleDescEvents">
+                  Social Events Director
+                  <i class="bi bi-chevron-down ms-2 rotate-icon"></i>
+                </h5>
+
+                <!-- Role Description -->
+                <div class="collapse" id="roleDescEvents">
+                  <p class="role-text text-muted small mb-0 mt-2">
+                    Role Description coming soon...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body rounded-lg p-4 ">
+              <div>
+                <h6 class="about-title text-center mb-2">About Me</h6>
+                <p class="about-text lh-lg">
+                  About Me Coming Soon...
+                </p>
+              </div>
+
+              <div class="text-center mt-3">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-linkedin fs-3 text-pink"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <footer class="footer">
-    <p>&copy 2025, UMD Association for Women in Computing</p>
-  </footer>
+    <footer class="footer">
+      <br>
+      <p>&copy 2026, UMD Association for Women in Computing</p>
+    </footer>
 
+    <script> // Carousel for executive board
+      new Splide('#execCarousel', {
+        type: 'loop',
+        perPage: 4,
+        perMove: 1,
+        gap: '1.5rem',
+        focus: 'center',
+        trimSpace: false,
+        breakpoints: {
+          768: { perPage: 1 },
+          1024: { perPage: 2 },
+        }
+      }).mount();</script>
 </body>
 
 </html>
