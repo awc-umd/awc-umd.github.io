@@ -1,27 +1,28 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    background-color: var(--background);
-    color: var(--text);
-    font-family: "DM Sans", serif;
-  }
-  
-  .landing-page {
-    background-image: linear-gradient(var(--primary), var(--secondary), var(--secondary), var(--background));
-    min-height: 100vh; 
-    height: auto; 
-    position: relative; 
-  }
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "DM Sans", serif;
+}
 
-  .landing-page-title {
-    font-size: 100px;
-    font-family: "Cormorant Garamond";
-  }
+.landing-page {
+  background-image: linear-gradient(var(--primary), var(--secondary), var(--secondary), var(--background));
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+}
 
-  .mission-statement-descrp {
-    font-family:'DM Sans'; 
-    color:#18191A;
-  }
+.landing-page-title {
+  font-size: 100px;
+  font-family: "Cormorant Garamond";
+}
+
+.mission-statement-descrp {
+  font-family: 'DM Sans';
+  color: #18191A;
+}
 
 @media screen and (max-width: 500px) {
   .landing-page-title {
@@ -29,38 +30,39 @@ body, html {
     font-size: 50px;
     font-weight: 50;
   }
+
   .mission-statement-title {
     font-size: xx-large;
   }
 }
- 
+
 div.img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-  
+
 div.desc {
-    padding: 12px;
-    text-align: center;
+  padding: 12px;
+  text-align: center;
 }
-  
+
 
 @media only screen and (max-width: 1000px) {
-    .execboard {
-      width: 49.99999%;
-      margin: 10px 0;
-    }
+  .execboard {
+    width: 49.99999%;
+    margin: 10px 0;
+  }
 }
-  
+
 @media only screen and (max-width: 500px) {
-    .execboard {
-      width: 100%;
-    }
+  .execboard {
+    width: 100%;
+  }
 }
 
 .exec-board h2 {
-    font-size: 60px;
-    font-family: "Cormorant Garamond", serif;
+  font-size: 60px;
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* EXEC Section */
@@ -79,8 +81,8 @@ div.desc {
 
 .exec .position {
   color: var(--accent);
-    font-size: 20px;
-    font-family: "DM Sans", serif;
+  font-size: 20px;
+  font-family: "DM Sans", serif;
 }
 
 .exec h4 {
@@ -96,14 +98,14 @@ div.desc {
 /* 1) Turn your row into flex + wrap */
 .row.exec-row {
   display: flex;
-  flex-wrap: wrap;          
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 /* 2) Let each “col exec” flex equally */
 .col.exec {
-  flex: 1 1 400px;
   max-width: 300px;
+  margin: 0 auto;
 }
 
 /* 3) Make the image always fill its card */
@@ -126,17 +128,24 @@ div.desc {
 
 
 .custom-outline-btn {
-  border: 2px solid var(--title); /* outline color */
-  color: var(--title);             /* text color */
+  border: 2px solid var(--title);
+  /* outline color */
+  color: var(--title);
+  /* text color */
   background-color: transparent;
-  font-family: "Poppins", sans-serif; /* optional */
+  font-family: "Poppins", sans-serif;
+  /* optional */
   transition: 0.3s;
 }
 
-.custom-outline-btn:hover, .custom-outline-btn:focus {
-  background-color: var(--title);  /* fill on hover */
-  color: var(--text);               /* text on hover */
-  border-color: var(--title);      /* keep border same color */
+.custom-outline-btn:hover,
+.custom-outline-btn:focus {
+  background-color: var(--title);
+  /* fill on hover */
+  color: var(--text);
+  /* text on hover */
+  border-color: var(--title);
+  /* keep border same color */
 }
 
 
@@ -146,7 +155,8 @@ div.desc {
 
 .modal-content {
   background-image: linear-gradient(var(--primary), var(--secondary), var(--background)) !important;
-  font-family: "Poppins"; /* or your preferred font */
+  font-family: "Poppins";
+  /* or your preferred font */
   text-align: left;
 }
 
@@ -159,12 +169,13 @@ h4.modal-title {
 }
 
 .modal-body {
-  font-size: 16px; /* optional sizing */
+  font-size: 16px;
+  /* optional sizing */
 }
 
 .role-title {
-  color: var(--title); 
-  font-family: "DM Sans","Cormorant Garamond";
+  color: var(--title);
+  font-family: "DM Sans", "Cormorant Garamond";
   font-style: italic;
   font-size: 27px;
   font-weight: bold;
@@ -176,7 +187,7 @@ h4.modal-title {
 }
 
 .about-title {
-  color: #ff4da6; 
+  color: #ff4da6;
   font-family: "DM Sans", serif;
   font-size: 20px;
   font-weight: bold;
@@ -185,11 +196,11 @@ h4.modal-title {
 .about-text {
   font-family: "DM Sans", serif;
 }
-  
+
 .text-pink {
   color: #ff4da6;
 }
-  
+
 /* img hover effect: */
 .img-hover-container img {
   transition: 0.3s ease;
@@ -205,16 +216,18 @@ h4.modal-title {
 }
 
 .img-hover-container:hover img {
-  filter: brightness(70%); /* dim effect */
+  filter: brightness(70%);
+  /* dim effect */
 }
 
 .img-hover-container:hover .hover-btn {
-  opacity: 1; /* show button */
+  opacity: 1;
+  /* show button */
   background-color: var(--accent);
   border-color: var(--accent);
-  color:var(--background);
+  color: var(--background);
   font-family: "DM Sans";
-  font-size:18px
+  font-size: 18px
 }
 
 
@@ -224,7 +237,7 @@ h4.modal-title {
 }
 
 /* Rotate when expanded */
-.collapse.show + .rotate-icon,
+.collapse.show+.rotate-icon,
 h5[aria-expanded="true"] .rotate-icon {
   transform: rotate(180deg);
 }
@@ -234,15 +247,35 @@ h5[role="button"] {
 }
 
 h5[role="button"]:hover {
-  color: var(--accent);       /* slightly brighter pink */
+  color: var(--accent);
+  /* slightly brighter pink */
   text-decoration: underline;
 }
 
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.splide__slide .exec {
+  text-align: center;
+  width: 100%;
+}
+
+.splide__arrow svg {
+  fill: #ffcae5 !important;
+}
+
+.splide__arrow {
+  background: rgba(115, 4, 108, 0.8) !important;
+}
+
 :root {
-    --text: #080212;
-    --background: #fdfaff;
-    --primary: #dfccff;
-    --secondary: #ffd1e9;
-    --accent: #ec4b7b;
-    --title: #7b66b5;
+  --text: #080212;
+  --background: #fdfaff;
+  --primary: #dfccff;
+  --secondary: #ffd1e9;
+  --accent: #ec4b7b;
+  --title: #7b66b5;
 }
